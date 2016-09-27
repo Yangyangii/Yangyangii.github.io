@@ -19,26 +19,26 @@ Cloudera
 CDH5
 
 ## Required Resource
-디스크 용량
+디스크 용량<br/>
 +   <em>Cloudera Manager Server( 관리서버 )</em> - /var : 5 GB, /usr : 500 MB
 +   <em>Cloudera Management Service( 서비스서버 )</em> - /var : 20 GB
 +   <em>RAM : 4GB</em>
 +   <em>Python : CDH 5 requires Python 2.6 or 2.7</em>
 
-요구되는 네트워킹
+요구되는 네트워킹<br/>
 +   <em>ssh 통신 필요</em>
 +   <em>Security-Enhanced Linux (SELinux) 설정 해제 (이 경우 Ubuntu 14.04 LTS 운영체제의 경우 따로 설정할 필요가 없는 듯 했다. 혹여 해당 문제가 발생하면 참고 링크에서 보면 될 듯 하다)</em>
 +   <em>7180 포트 오픈</em>
 
 ## 설치 전 확인 사항
-괜히 사용자 계정 써서 sudo 쓰고 다시 설정하고 하는 수고로움을 하지 말고 바로 root로 접속해서 하도록 한다.
-각 서버의 호스트 이름은 번호를 ubuntu1, ubuntu2, ..., ubuntu9 등 넘버링으로 하면 관리하기 편하다.
-클러스터를 구성하는 도메인명을 등록해야한다.
+괜히 사용자 계정 써서 sudo 쓰고 다시 설정하고 하는 수고로움을 하지 말고 바로 root로 접속해서 하도록 한다.<br/>
+각 서버의 호스트 이름은 번호를 ubuntu1, ubuntu2, ..., ubuntu9 등 넘버링으로 하면 관리하기 편하다.<br/>
+클러스터를 구성하는 도메인명을 등록해야한다.<br/>
 
 ## Setting Network
-Local Network Server를 사용하는 사람도 있을 것이고, AWS Server와 같은 Cloud Server를 사용하는 사람도 있을 것이다.
-필자의 경우에는 학교에 Server를 두고 구축해야 했기에, Local Network Server를 기준으로 한다.
-총 9대의 서버가 있으며, 스위치를 통해 각 네트워크를 연결하고 1번 서버를 호스트 서버로 통해서 종속된 서버들에 접속하기 위해 호스트 서버에만 외부 랜을 연결했고, 나머지 서버에는 Private IP를 설정하고 구축했다.
+Local Network Server를 사용하는 사람도 있을 것이고, AWS Server와 같은 Cloud Server를 사용하는 사람도 있을 것이다.<br/>
+필자의 경우에는 학교에 Server를 두고 구축해야 했기에, Local Network Server를 기준으로 한다.<br/>
+총 9대의 서버가 있으며, 스위치를 통해 각 네트워크를 연결하고 1번 서버를 호스트 서버로 통해서 종속된 서버들에 접속하기 위해 호스트 서버에만 외부 랜을 연결했고, 나머지 서버에는 Private IP를 설정하고 구축했다.<br/>
 
 +   <em>DHCP Server</em> - 1번 서버에만 외부 랜이 연결되어 있으므로, 나머지 서버들이 1번 서버를 통해 인터넷이 가능하게 하기 위하여 1번 서버에서 DHCP Server를 가동해준다.
 {% highlight ruby %}
