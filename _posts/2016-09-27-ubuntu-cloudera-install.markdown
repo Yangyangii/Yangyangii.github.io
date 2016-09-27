@@ -9,40 +9,55 @@ categories: [Cloudera]
 구축에 관련한 포스트들도 대부분 Redhat 기반으로 되어 있기 때문에, Ubuntu로 구축할 경우 오류가 나는 부분이 많다. 그래서 우분투 사용자를 위한 구축 방법을 써본다.
 
 ## References
-+   <em>https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
-+   <em>http://www.cloudera.com/downloads/manager/5-7-0.html</em> - 구축 당시 5.7버젼으로 했으나 현재 기준 최신버젼 5.8.1 버젼까지 나와있음
-+   <em>https://www.server-world.info/en/note?os=Ubuntu_14.04&p=dhcp&f=1</em>
++   <em>[https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md]</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
++   <em>[http://www.cloudera.com/downloads/manager/5-7-0.html]</em> - 구축 당시 5.7버젼으로 했으나 현재 기준 최신버젼 5.8.1 버젼까지 나와있음
++   <em>[https://www.server-world.info/en/note?os=Ubuntu_14.04&p=dhcp&f=1]</em>
 
 ## Software Spec.
 Ubuntu 14.04 LTS (16.04는 현재 클라우데라가 지원하지 않고 있는 것으로 알고 있다.)
+
 Cloudera 
+
 CDH5
 
 ## Required Resource
-디스크 용량<br/>
+디스크 용량
+
 +   <em>Cloudera Manager Server( 관리서버 )</em> - /var : 5 GB, /usr : 500 MB
+
 +   <em>Cloudera Management Service( 서비스서버 )</em> - /var : 20 GB
+
 +   <em>RAM : 4GB</em>
+
 +   <em>Python : CDH 5 requires Python 2.6 or 2.7</em>
 
-요구되는 네트워킹<br/>
+요구되는 네트워킹
+
 +   <em>ssh 통신 필요</em>
+
 +   <em>Security-Enhanced Linux (SELinux) 설정 해제 (이 경우 Ubuntu 14.04 LTS 운영체제의 경우 따로 설정할 필요가 없는 듯 했다. 혹여 해당 문제가 발생하면 참고 링크에서 보면 될 듯 하다)</em>
+
 +   <em>7180 포트 오픈</em>
 
 ## 설치 전 확인 사항
-괜히 사용자 계정 써서 sudo 쓰고 다시 설정하고 하는 수고로움을 하지 말고 바로 root로 접속해서 하도록 한다.<br/>
-각 서버의 호스트 이름은 번호를 ubuntu1, ubuntu2, ..., ubuntu9 등 넘버링으로 하면 관리하기 편하다.<br/>
-클러스터를 구성하는 도메인명을 등록해야한다.<br/>
+괜히 사용자 계정 써서 sudo 쓰고 다시 설정하고 하는 수고로움을 하지 말고 바로 root로 접속해서 하도록 한다.
+
+각 서버의 호스트 이름은 번호를 ubuntu1, ubuntu2, ..., ubuntu9 등 넘버링으로 하면 관리하기 편하다.
+
+클러스터를 구성하는 도메인명을 등록해야한다.
+
 
 ## Setting Network
-Local Network Server를 사용하는 사람도 있을 것이고, AWS Server와 같은 Cloud Server를 사용하는 사람도 있을 것이다.<br/>
-필자의 경우에는 학교에 Server를 두고 구축해야 했기에, Local Network Server를 기준으로 한다.<br/>
-총 9대의 서버가 있으며, 스위치를 통해 각 네트워크를 연결하고 1번 서버를 호스트 서버로 통해서 종속된 서버들에 접속하기 위해 호스트 서버에만 외부 랜을 연결했고, 나머지 서버에는 Private IP를 설정하고 구축했다.<br/>
+Local Network Server를 사용하는 사람도 있을 것이고, AWS Server와 같은 Cloud Server를 사용하는 사람도 있을 것이다.
+
+필자의 경우에는 학교에 Server를 두고 구축해야 했기에, Local Network Server를 기준으로 한다.
+
+총 9대의 서버가 있으며, 스위치를 통해 각 네트워크를 연결하고 1번 서버를 호스트 서버로 통해서 종속된 서버들에 접속하기 위해 호스트 서버에만 외부 랜을 연결했고, 나머지 서버에는 Private IP를 설정하고 구축했다.
+
 
 +   <em>DHCP Server</em> - 1번 서버에만 외부 랜이 연결되어 있으므로, 나머지 서버들이 1번 서버를 통해 인터넷이 가능하게 하기 위하여 1번 서버에서 DHCP Server를 가동해준다.
+
 {% highlight ruby %}
-#!/usr/bin/env ruby
 root@dlp:~# apt-get -y install isc-dhcp-server
 root@dlp:~# vi /etc/dhcp/dhcpd.conf
 # line 16: specify domain name
@@ -53,13 +68,13 @@ option domain-name-servers dlp.srv.world;
 authoritative;
 # add at the last
 # specify network address and subnet-mask
-subnet 10.0.0.0 netmask 255.255.255.0 {
+subnet 192.168.0.0 netmask 255.255.255.0 {
      # specify default gateway
-     option routers 10.0.0.1;
+     option routers 192.168.0.1;
      # specify subnet-mask
      option subnet-mask 255.255.255.0;
      # specify the range of leased IP address
-     range dynamic-bootp 10.0.0.200 10.0.0.254;
+     range dynamic-bootp 192.168.0.1 192.168.0.254;
 }
 root@dlp:~# initctl start isc-dhcp-server 
 isc-dhcp-server start/running, process 1852
@@ -67,7 +82,6 @@ isc-dhcp-server start/running, process 1852
 
 +   <em>Host Setting</em> - 각 호스트들을 FQDN(Fully Qualified Domain Name)으로 설정해 주어야 한다. /etc/hosts 파일을 아래와 같이 설정하면 된다.
 {% highlight ruby %}
-#!/usr/bin/env ruby
 192.168.xx.xx1  ubuntu1.mycompany.co.kr  ubuntu1  # ubuntu1이 관리서버라고 가정함. mycompany.co.kr 은 /etc/network/interfaces에 dns-search로 등록되어 있어야한다.
 192.168.xx.xx2  ubuntu2.mycompany.co.kr  ubuntu2
 192.168.xx.xx3  ubuntu3.mycompany.co.kr  ubuntu3
@@ -81,7 +95,6 @@ isc-dhcp-server start/running, process 1852
 
 +   <em>SSH Setting</em> - 우분투 설치 시에 옵션에서 선택했다면 따로 설치는 하지 않아도 된다. 아래는 로그인과정 없이 ssh 접속이 가능하도록 설정하는 것이다.
 {% highlight ruby %}
-#!/usr/bin/env ruby
 # ssh-keygen 입력후에 특별한 입력없이 엔터 3번
 ssh-keygen
 
@@ -105,7 +118,8 @@ ssh ubuntu1
 ssh ubuntu9
 {% endhighlight %}
 가끔 offending key 발생으로 접속이 제한되는 경우가 생기는데 이 경우 다음 링크에서처럼 해당 ssh keygen을 지우고 다시 설정하면 된다.
-url: http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/
+
+url: [http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/]
 
 
 ## Default Setting Before Installing Cloudera
@@ -114,7 +128,6 @@ url: http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_ho
 
 +   <em>PSCP Setting</em> - PSCP는 scp 명령어를 여러 호스트에게 전체적으로 전달할 수 있는 방법이다. 해당 파일을 다른 서버들로 한꺼번에 복사할 수 있다.
 {% highlight ruby %}
-#!/usr/bin/env ruby
 # PSSH 설치
 cd /usr/local/src
 wget http://parallel-ssh.googlecode.com/files/pssh-2.1.1.tar.gz
@@ -145,14 +158,12 @@ pscp -h ~/hosts.txt /etc/hosts /etc/hosts
 ## 준비 작업
 +   <em>iptables 정지(방화벽 정지)</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 pssh -h ~/all_hosts.txt  service iptables stop
 pssh -h ~/all_hosts.txt  chkconfig iptables off
 {% endhighlight %}
 
 +   <em>swappiness 설정</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 pssh -h ~/all_hosts.txt  'sysctl –w vm.swappiness=0'
 echo 'vm.swappiness=0' >> /etc/sysctl.conf
 pscp -h ~/hosts.txt  /etc/sysctl.conf   /etc/sysctl.conf
@@ -160,7 +171,6 @@ pscp -h ~/hosts.txt  /etc/sysctl.conf   /etc/sysctl.conf
 
 +   <em>transparent_hugepage</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 pssh -h ~/all_hosts.txt   echo never > /sys/kernel/mm/transparent_hugepage/defrag
 cat <<EOT >>  /etc/rc.local
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
@@ -171,7 +181,6 @@ pscp -h ~/hosts.txt /etc/rc.local /etc/rc.local
 
 +   <em>NTP Synchronization</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 pssh -h ~/all_hosts.txt   yum install -y ntp
 또는
 pscp -h ~/hosts.txt  /root/ntp-4.2.6p5-5.el6.centos.4.x86_64.rpm  /root/
@@ -194,7 +203,6 @@ pssh -h ~/all_hosts.txt   chkconfig ntpd on
 
 +   <em>File descriptor</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 cat <<EOT >>   /etc/security/limits.conf
 *    hard nofile 131072
 *    soft nofile 131072
@@ -207,7 +215,6 @@ pscp -h ~/hosts.txt /etc/security/limits.conf  /etc/security/limits.conf
 
 +   <em>Reboot all of the server</em>
 {% highlight ruby %}
-#!/usr/bin/env ruby
 pssh -h ~/all_hosts.txt reboot
 {% endhighlight %}
 
@@ -215,8 +222,10 @@ pssh -h ~/all_hosts.txt reboot
 
 
 ## Install Cloudera Manager
-+   <em>1번 호스트 서버에서만 root계정으로 접속하여 설치하면 된다.</em>
-+   <em>Reference site에서는 5~10분이면 된다고 하였으나, 서버 상태에 따라 오래걸릴수도 있다. 필자의 경우 30분정도가 소요된 것 같다.</em>
+
++   1번 호스트 서버에서만 root계정으로 접속하여 설치하면 된다.
+
++   Reference site에서는 5~10분이면 된다고 하였으나, 서버 상태에 따라 오래걸릴수도 있다. 필자의 경우 30분정도가 소요된 것 같다.
 
 
 ## Cloudera Manager Server
