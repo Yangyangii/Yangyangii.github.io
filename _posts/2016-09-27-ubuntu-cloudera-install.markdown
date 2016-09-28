@@ -57,7 +57,7 @@ Local Network Server를 사용하는 사람도 있을 것이고, AWS Server와 �
 
 +   <em>DHCP Server</em> - 1번 서버에만 외부 랜이 연결되어 있으므로, 나머지 서버들이 1번 서버를 통해 인터넷이 가능하게 하기 위하여 1번 서버에서 DHCP Server를 가동해준다.
 
-'''
+```
 root@dlp:~# apt-get -y install isc-dhcp-server
 root@dlp:~# vi /etc/dhcp/dhcpd.conf
 # line 16: specify domain name
@@ -78,7 +78,7 @@ subnet 192.168.0.0 netmask 255.255.255.0 {
 }
 root@dlp:~# initctl start isc-dhcp-server 
 isc-dhcp-server start/running, process 1852
-'''
+```
 
 +   <em>Host Setting</em> - 각 호스트들을 FQDN(Fully Qualified Domain Name)으로 설정해 주어야 한다. /etc/hosts 파일을 아래와 같이 설정하면 된다.
 {% highlight ruby %}
