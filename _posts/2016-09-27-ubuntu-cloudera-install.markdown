@@ -120,6 +120,7 @@ ssh ubuntu9
 가끔 offending key 발생으로 접속이 제한되는 경우가 생기는데 이 경우 다음 링크에서처럼 해당 ssh keygen을 지우고 다시 설정하면 된다.
 
 url: [http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/](http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/)
+[https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache](https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache)
 
 
 ## Default Setting Before Installing Cloudera
