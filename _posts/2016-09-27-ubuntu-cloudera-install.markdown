@@ -9,9 +9,9 @@ categories: [Cloudera]
 구축에 관련한 포스트들도 대부분 Redhat 기반으로 되어 있기 때문에, Ubuntu로 구축할 경우 오류가 나는 부분이 많다. 그래서 우분투 사용자를 위한 구축 방법을 써본다.
 
 ## References
-+   <em>[https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md]</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
-+   <em>[http://www.cloudera.com/downloads/manager/5-7-0.html]</em> - 구축 당시 5.7버젼으로 했으나 현재 기준 최신버젼 5.8.1 버젼까지 나와있음
-+   <em>[https://www.server-world.info/en/note?os=Ubuntu_14.04&p=dhcp&f=1]</em>
++   <em>[https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md](https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md)</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
++   <em>[http://www.cloudera.com/downloads/manager/5-7-0.html](http://www.cloudera.com/downloads/manager/5-7-0.html)</em> - 구축 당시 5.7버젼으로 했으나 현재 기준 최신버젼 5.8.1 버젼까지 나와있음
++   <em>[https://www.server-world.info/en/note?os=Ubuntu_14.04&p=dhcp&f=1](https://www.server-world.info/en/note?os=Ubuntu_14.04&p=dhcp&f=1)</em>
 
 ## Software Spec.
 Ubuntu 14.04 LTS (16.04는 현재 클라우데라가 지원하지 않고 있는 것으로 알고 있다.)
@@ -119,7 +119,7 @@ ssh ubuntu9
 {% endhighlight %}
 가끔 offending key 발생으로 접속이 제한되는 경우가 생기는데 이 경우 다음 링크에서처럼 해당 ssh keygen을 지우고 다시 설정하면 된다.
 
-url: [http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/]
+url: [http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/](http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/)
 
 
 ## Default Setting Before Installing Cloudera
