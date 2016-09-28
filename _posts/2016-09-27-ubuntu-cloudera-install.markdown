@@ -6,7 +6,7 @@ categories: [Cloudera]
 ---
 
 클라우데라와 관련해서는 정보가 많이 없다.
-구축에 관련한 포스트들도 대부분 Redhat 기반으로 되어 있기 때문에, Ubuntu로 구축할 경우 오류가 나는 부분이 많다. 그래서 우분투 사용자를 위한 구축 방법을 써본다.
+구축에 관련한 포스트들도 대부분 Redhat 기반으로 되어 있기 때문에, Ubuntu로 구축할 경우 오류가 나는 부분이 많다. 그래서 우분투 사용자를 위해 몇가지를 변경하고 세세한 부분을 보충하여 포스팅한다.
 
 ## References
 +   <em>[https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md](https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md)</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
@@ -120,7 +120,6 @@ ssh ubuntu9
 가끔 offending key 발생으로 접속이 제한되는 경우가 생기는데 이 경우 다음 링크에서처럼 해당 ssh keygen을 지우고 다시 설정하면 된다.
 
 url: [http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/](http://www.thegeekstuff.com/2010/04/how-to-fix-offending-key-in-sshknown_hosts-file/)
-[https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache](https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache)
 
 
 ## Default Setting Before Installing Cloudera
@@ -228,8 +227,18 @@ pssh -h ~/all_hosts.txt reboot
 
 +   Reference site에서는 5~10분이면 된다고 하였으나, 서버 상태에 따라 오래걸릴수도 있다. 필자의 경우 30분정도가 소요된 것 같다.
 
+{% highlight ruby %}
+wget http://archive.cloudera.com/cm5/installer/latest/cloudera-manager-installer.bin
+chmod u+x cloudera-manager-installer.bin
+./cloudera-manager-installer.bin
+{% endhighlight %}
 
-## Cloudera Manager Server
++   설치 진행 과정에서 모두 agree or yes를 하고 진행하면 된다. 이 과정은 Manager를 설치하는 것이며, 클러스터 설정 및 설치는 웹 UI에서 진행한다.
+
++   설치가 완료되면 http://<1번서버IP>:7080 으로 접속하면 되며, username: admin, password: admin 으로 로그인하라고 완료 메세지를 띄워준다.
+
+** 여기까지 Cloudera Manager 설치가 완료되었으며, Manager Web UI에서 클러스터 설치하는 것은 다음 포스트에서 계속하도록 한다. **
+
 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
