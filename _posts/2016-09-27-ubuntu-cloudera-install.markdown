@@ -80,8 +80,10 @@ root@dlp:~# initctl start isc-dhcp-server
 isc-dhcp-server start/running, process 1852
 ```
 
-+   <em>Host Setting</em> - 각 호스트들을 FQDN(Fully Qualified Domain Name)으로 설정해 주어야 한다. /etc/hosts 파일을 아래와 같이 설정하면 된다.
++   <em>Host Setting</em> - 중요한 부분인데 각 호스트들을 FQDN(Fully Qualified Domain Name)으로 설정해 주어야 한다. /etc/hosts 파일을 아래와 같이 설정하면 된다.
 {% highlight ruby %}
+127.0.0.1 localhost
+
 192.168.xx.xx1  ubuntu1.mycompany.co.kr  ubuntu1  # ubuntu1이 관리서버라고 가정함. mycompany.co.kr 은 /etc/network/interfaces에 dns-search로 등록되어 있어야한다.
 192.168.xx.xx2  ubuntu2.mycompany.co.kr  ubuntu2
 192.168.xx.xx3  ubuntu3.mycompany.co.kr  ubuntu3
@@ -146,7 +148,7 @@ ubuntu9
 
 vi ~/hosts.txt
 # 관리서버를 포함하지 않음
-ubuntu1
+ubuntu2
 ~
 ubuntu9
 
