@@ -246,7 +246,7 @@ netstat -tln|grep 7080
 
 ** 여기까지 Cloudera Manager 설치가 완료되었으며, Manager Web UI에서 클러스터 설치하는 것은 다음 포스트에서 계속하도록 한다. **
 
-![Screenshot WebLogin](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/WebUI-Login.jpg  "Screenshot WebLogin")
+![Screenshot WebLogin](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/WebUI-Login.JPG  "Screenshot WebLogin")
 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
