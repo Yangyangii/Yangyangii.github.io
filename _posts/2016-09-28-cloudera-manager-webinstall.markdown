@@ -9,11 +9,13 @@ categories: [Cloudera]
 
 ## References
 +   <em>[https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md](https://github.com/biospin/BigBio/blob/master/part03/week01_160503/hadoop/cloudera_install.md)</em> - 운영체제와 관련없이 겹치는 부분은 대부분 보고 그대로 적은 부분이 많습니다.
++   <em>[https://community.cloudera.com/t5/CDH-Manual-Installation/How-to-resolve-quot-Permission-denied-quot-errors-in-CDH/ta-p/36141](https://community.cloudera.com/t5/CDH-Manual-Installation/How-to-resolve-quot-Permission-denied-quot-errors-in-CDH/ta-p/36141)</em> - Hadoop Permission Error Trouble Shooting
 
+
+## Web UI Install
 
 ![Screenshot WebLogin](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/WebUI-Login.JPG  "Screenshot WebLogin")
 
-## Web UI Login
 +   초기 ID/PW는 admin/admin이다. 필요에 따라 변경해주면 되겠다.
 
 +   각 서버의 호스트 이름은 번호를 ubuntu1, ubuntu2, ..., ubuntu9 등 넘버링으로 하면 관리하기 편하다.
@@ -59,6 +61,21 @@ categories: [Cloudera]
 
 +	네트워크 상태 및 여러가지 조건에 따라 서비스가 불량이 되기도 하고 양호가 되기도 하는데, 불량이 되는 경우 해당 서비스를 재시작해주면 대부분 해결된다.
 
+
+## Trouble Shooting
+
++	클러스터 설정 및 설치 시에 Namenode에서 supervisor.conf와 관련하여 Permission 문제가 발생하는 경우가 있다. 해결 방법이 여러가지가 있는것 같으나, localhost의 IP address를 127.0.0.1에서 127.0.1.1로 수정하면 해결되는 것으로 확인했다.
+
++	모두 구축한 후에 shell에서 pyspark를 치고 들어가면, hadoop permission 문제로 SparkContext가 정상적으로 작동하지 않는 경우가 발생한다. 이 경우도 마찬가지로 Namenode 문제였는데, hdfs://<특정 IP>:8020으로 되어있는 것을 아래와 같이 수정하여 해결하면 된다.
+{% highlight ruby %}
+vi /etc/hadoop/conf/core-site.xml
+
+
+<property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://0.0.0.0:8020</value>
+</property>
+{% endhighlight %}
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
