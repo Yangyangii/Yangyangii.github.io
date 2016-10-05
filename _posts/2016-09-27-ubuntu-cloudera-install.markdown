@@ -237,8 +237,16 @@ chmod u+x cloudera-manager-installer.bin
 
 +   설치가 완료되면 http://<1번서버IP>:7080 으로 접속하면 되며, username: admin, password: admin 으로 로그인하라고 완료 메세지를 띄워준다.
 
++   혹시 접속이 되지 않는 다면, 아래와 같이 포트가 열려있는지 확인해본다. 재부팅하거나 했을 때는 서버가 열리는데 시간이 조금 걸린다.
+{% highlight ruby %}
+netstat -tln|grep 7080
+{% endhighlight %}
+
+
+
 ** 여기까지 Cloudera Manager 설치가 완료되었으며, Manager Web UI에서 클러스터 설치하는 것은 다음 포스트에서 계속하도록 한다. **
 
+<img src="img/pyspark-error.jpg" alt="error" height="300" width="300">
 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
