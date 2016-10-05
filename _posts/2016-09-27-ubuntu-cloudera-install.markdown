@@ -235,6 +235,8 @@ chmod u+x cloudera-manager-installer.bin
 
 +   설치 진행 과정에서 모두 agree or yes를 하고 진행하면 된다. 이 과정은 Manager를 설치하는 것이며, 클러스터 설정 및 설치는 웹 UI에서 진행한다.
 
++   간혹 설치 중간에 오랜 시간 멈춰있는 경우가 있는데(usually 40%에서), 겁먹지 말고 인내심을 갈고 닦으며 기다리도록 하자. 참으면 복이 온다지 않나. 혹여라도 중간에 설치를 취소하거나 하는 경우.. 상당히 곤란한 상황이 도래할 수 있다.
+
 +   설치가 완료되면 http://<1번서버IP>:7180 으로 접속하면 되며, username: admin, password: admin 으로 로그인하라고 다음과 같이 완료 메세지를 띄워준다.
 
 ![Screenshot Success Server](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/success-cloudera-manager-server.JPG  "Success Server")
