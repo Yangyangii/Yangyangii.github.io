@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ubuntu 14.04LTS에서 클라우데라 구축하기"
+title:  "Ubuntu 14.04LTS에서 클라우데라 구축하기(1)"
 date:   2016-09-27 15:18:23 +0700
 categories: [Cloudera]
 ---
