@@ -99,7 +99,7 @@ mean of the differences
 p-value < 0.05 이므로 두 약물은 수면 시간의 증감에 차이가 있다고 볼 수 있다.
 
 문제 예시3: R 내장자료인 InsectSpray 는 서로 다른 여섯종류(spray)의 살충제를 뿌려 죽은 벌레의 수(count)를 관찰한 데이터이다. 이중 A 와 B 살충제의 성능을 비교하려고 한다. A 와 B 두 살충제는 단위 면적당 죽인 벌레 수에 차이가 있는지 유의수준 0.05 에서 검정하시오.(A 와 B 의 단위 면적당 죽인 벌레 수의 분산은 서로 동일하다고 가정한다.) 
-{% highlight ruby %}
+{% highlight html %}
 > with(InsectSprays, t.test(count[spray == "A"], count[spray == "B"], var.equal = T))
 
 	Two Sample t-test
@@ -120,7 +120,7 @@ mean of x mean of y
 var.equal이라는 parameter는 분산이 같을 때에 사용하는 것이나, 실제로 분산을 구해본 결과 분산이 다르다.
 위의 경우 서로 같다고 가정한 상태에서 해 본 예시일 뿐이다.
 분산 결과값은 아래와 같다.
-{% highlight ruby %}
+{% highlight rhtml %}
 > for (idx in c("A", "B", "C", "D", "E"))
 +   print(with(InsectSprays, var(count[spray==idx])))
 [1] 22.27273
@@ -130,3 +130,4 @@ var.equal이라는 parameter는 분산이 같을 때에 사용하는 것이나, 
 [1] 3
 {% endhighlight %}
 
+	
