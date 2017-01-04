@@ -35,7 +35,7 @@ Correlation은 그룹 별로 잘 나눠서 관찰하는 것이 중요하며, Non
 하지만 반대로 상관관계가 그룹별로는 강하지만 개개별로 했을 경우에는 약한 경우가 많다.
 이런 경우에는 그룹별로만 판단하면 안된다.(Ecological Fallacy)
 
-{% highlight %}
+{% highlight html %}
 > cor(mtcars[,1:5], use="complete.obs", method = "pearson")
             mpg        cyl       disp         hp       drat
 mpg   1.0000000 -0.8521620 -0.8475514 -0.7761684  0.6811719

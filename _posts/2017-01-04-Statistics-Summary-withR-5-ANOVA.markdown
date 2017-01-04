@@ -19,7 +19,7 @@ t-test로는 1개 혹은 2개의 그룹에 대해서만 검증이 가능하다.
 그래서 2개 이상의 그룹에 대해 ANOVA를 통해 test를 하게 된다.
 ANOVA의 경우에는 statistic을 구할 때 Between groups와 Within groups로 나누어 Mean Squares(Variance)를 계산하고 MSB/MSW를 계산한다.
 
-{% highlight %}
+{% highlight html %}
 > tapply(InsectSprays$count, InsectSprays$spray, mean)
         A         B         C         D         E         F 
 14.500000 15.333333  2.083333  4.916667  3.500000 16.666667 
@@ -35,7 +35,7 @@ ANOVA의 경우에는 statistic을 구할 때 Between groups와 Within groups로
 
 
 Box Plot을 관찰해보면 test를 하기에 유의해보인다. 그러므로 One-way ANOVA test를 진행해보자
-{% highlight %}
+{% highlight html %}
 > oneway.test(count ~ spray, data = InsectSprays)
 
 	One-way analysis of means (not assuming equal variances)

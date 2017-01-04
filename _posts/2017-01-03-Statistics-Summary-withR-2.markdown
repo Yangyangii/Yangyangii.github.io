@@ -23,11 +23,11 @@ Sampling, Central Limit Theorem, t distribution, chi-square distribution, F dist
 모집단이 Normal이면 표본도 Normal
 모집단이 Normal이 아니어도, N이 충분히 크면(N>=30) approximately Normal
 Example)
-{% highlight %}
+{% highlight html %}
 > hist(rbinom(10000, 1, 0.9), breaks = c(-0.5,0.5,1.5), freq=F, xlab='x', main='Bernoulli(0.9)')
 {% endhighlight %}
 ![Screenshot CentralLimitTheorem](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-4.jpeg  "Screenshot CentralLimitTheorem")
-{% highlight %}
+{% highlight html %}
 > x <- numeric()
 > for (i in 1:10000) x <- c(x, mean(rbinom(50,1,0.9)))
 > hist(x, freq = F, main='n=50')
@@ -58,7 +58,7 @@ Steps of Hypothesis Testing
 
 문제 예시1: mtcars 자료를 이용하여 1973 년부터 1974 년까지 미국에서 생산된 자동차들의 평균 연비는 갤런당 20 마일(20mpg)로 알려져 있다. 수동미션 차량들이 자동미션 차량보다 연비가 좋다는 것을 밝히기 위해 수동 미션 차량들의 연비는 20mpg 보다 크다고 할 수 있는지 유의수준 0.05 에서 검정하시오 
 
-{% highlight %}
+{% highlight html %}
 > with(mtcars, t.test(mpg[am==1], mu=20, alternative="greater"))
 
 	One Sample t-test
@@ -77,7 +77,7 @@ mean of x
 이 경우에는 p-value가 0.05 보다 작으므로 reject 할 수 없다. 즉, 수동미션 차량이 연비가 더 좋다고 볼 수 있다.
 
 문제 예시2: R 내장자료인 sleep 은 서로 다른 두 종류(group)의 수면제로 각각의 약을 투여하고 수면시간의 증감(extra)을 조사하였다. 서로 다른 두 약물은 수면 시간의 증감에 차이가 있는지 유의수준 0.05 에서 검정하시오. 
-{% highlight %}
+{% highlight html %}
 > str(sleep)
 'data.frame':	20 obs. of  3 variables:
  $ extra: num  0.7 -1.6 -0.2 -1.2 -0.1 3.4 3.7 0.8 0 2 ...
