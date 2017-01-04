@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Statistics Summary with R(5) - ANOVA"
-date:   2017-01-03 17:18:23 +0700
+date:   2017-01-04 17:18:23 +0700
 categories: [Statistics]
 ---
 
@@ -33,7 +33,7 @@ ANOVA의 경우에는 statistic을 구할 때 Between groups와 Within groups로
 {% endhighlight %}
 ![Screenshot ANOVA-Boxplot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/ANOVA-Boxplot.jpeg  "Screenshot ANOVA-Boxplot")
 Box Plot을 관찰해보면 test를 하기에 유의해보인다. 그러므로 One-way ANOVA test를 진행해보자
-{% highlight rhtml %}
+{% highlight %}
 > oneway.test(count ~ spray, data = InsectSprays)
 
 	One-way analysis of means (not assuming equal variances)
@@ -43,5 +43,12 @@ F = 36.065, num df = 5.000, denom df = 30.043, p-value = 7.999e-12
 {% endhighlight %}
 ANOVA test는 오른쪽 꼬리만 생각하면된다.
 p-value < .5 이므로 각 그룹이 같지 않다고 볼 수 있다.
+
++	Two-way ANOVA
+One-way ANOVA와의 큰 차이점으로 interaction이 있다고 보면된다.
+변수들간에 interaction에서 어떤 결과가 나오는지를 다 나타내준다.
+대표적인 편리한 함수로 interaction.plot()이 있다.
+lm()함수의 결과에 anova()함수를 쓰면 anova table을 확인할 수 있다.
+또한 마찬가지로 테스트하기에 앞서 Box Plot을 그려서 육안으로 확인해보는 것이 좋다.
 
 

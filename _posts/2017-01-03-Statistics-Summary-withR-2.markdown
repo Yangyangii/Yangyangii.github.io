@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Statistics Summary with R(2) - CLT&t-test"
+title:  "Statistics Summary with R(2) - CLT, t-test"
 date:   2017-01-03 17:18:23 +0700
 categories: [Statistics]
 ---

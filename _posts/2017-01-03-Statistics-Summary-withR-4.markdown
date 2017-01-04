@@ -103,6 +103,7 @@ F-statistic:  34.7 on 5 and 66 DF,  p-value: < 2.2e-16
 사실상 sprayA를 대변하고 있다고 보면 된다.
 이 값들이 어떻게 계산되는지는 model.matrix() 함수를 사용하여 관찰하면, Estimate이 어떻게 계산될지 추측할 수 있다.
 Pr(>|t|)의 경우는 Intercept에 대한 t-test 결과의 p-value이다. 즉, 유의수준을 0.05라고 했을 때 p-value가 더 작으면 대립가설(Intercept와 같지 않다)을 받아들인다.
-
+Adjusted R²는 변수를 많이 넣음에 따라 페널티를 줘서 계산한 R²이다.
+따라서, 대체로 변수를 추가할수록 R²는 증가하게 되는데 Adjusted R²에 따라 무조건 변수를 많이 넣는 것이 좋다고 볼수는 없다.
 
 
