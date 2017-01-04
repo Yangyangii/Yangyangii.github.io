@@ -19,7 +19,7 @@ t-test로는 1개 혹은 2개의 그룹에 대해서만 검증이 가능하다.
 그래서 2개 이상의 그룹에 대해 ANOVA를 통해 test를 하게 된다.
 ANOVA의 경우에는 statistic을 구할 때 Between groups와 Within groups로 나누어 Mean Squares(Variance)를 계산하고 MSB/MSW를 계산한다.
 
-{% highlight rhtml %}
+{% highlight %}
 > tapply(InsectSprays$count, InsectSprays$spray, mean)
         A         B         C         D         E         F 
 14.500000 15.333333  2.083333  4.916667  3.500000 16.666667 
@@ -51,5 +51,5 @@ One-way ANOVA와의 큰 차이점으로 interaction이 있다고 보면된다.
 대표적인 편리한 함수로 interaction.plot()이 있다.
 lm()함수의 결과에 anova()함수를 쓰면 anova table을 확인할 수 있다.
 또한 마찬가지로 테스트하기에 앞서 Box Plot을 그려서 육안으로 확인해보는 것이 좋다.
-
+interaction의 결과를 보면 어떻게 했을 때 더 좋은 결과가 있는지 등을 확인할 수 있다.
 
