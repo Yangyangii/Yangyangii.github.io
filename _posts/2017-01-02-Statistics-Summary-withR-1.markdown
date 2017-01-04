@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Statistics Summary with R(1)"
+title:  "Statistics Summary with R(1) - Basic"
 date:   2017-01-02 17:18:23 +0700
 categories: [Statistics]
 ---
