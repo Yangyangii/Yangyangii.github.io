@@ -10,7 +10,7 @@ categories: [Statistics]
 +   데이터 마이닝을 하는 데에 있어서 필요한 통계적 기법들이 있다. 그런 것들을 분석을 하는 데에 자주 사용하기 위해 정리하는 것이 좋을 것 같다.
 +	R을 통해 실습을 하도록 하고, 의미를 파악하고 통찰력을 갖는 데에 필요한 것들을 위주로 통계 개념을 정리한다.
 
-- Topic: Simple Linear Regression
+- Topic: Simple Linear Regression, Multiple Linear Regression
 
 +	Simple Linear Regression
 Y를 X값으로 예측하는 기법이다.
@@ -72,3 +72,37 @@ R에서 아래와같이 사용가능하다. step()의 경우에는 multiple line
 종속변수를 parameter에 넣을때 .은 모든 Column을 가리킨다.
 하지만 변수선정 함수를 사용하지 않아도 분석에 있어서 Scatter Plot을 통해서 직관적으로 보고 판단하는 방법도 가능하다.
 이외에도 lm.beta, car의 vif, lmtest, leaps 등의 라이브러리로 테스트하고 변수를 선별하는 작업들이 가능하다.
+
+{% highlight rhtml %}
+> lm.out <- lm(count ~ spray, data = InsectSprays)
+> summary(lm.out)
+
+Call:
+lm(formula = count ~ spray, data = InsectSprays)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-8.333 -1.958 -0.500  1.667  9.333 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  14.5000     1.1322  12.807  < 2e-16 ***
+sprayB        0.8333     1.6011   0.520    0.604    
+sprayC      -12.4167     1.6011  -7.755 7.27e-11 ***
+sprayD       -9.5833     1.6011  -5.985 9.82e-08 ***
+sprayE      -11.0000     1.6011  -6.870 2.75e-09 ***
+sprayF        2.1667     1.6011   1.353    0.181    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.922 on 66 degrees of freedom
+Multiple R-squared:  0.7244,	Adjusted R-squared:  0.7036 
+F-statistic:  34.7 on 5 and 66 DF,  p-value: < 2.2e-16
+{% endhighlight %}
+위의 Coefficients에서 Intercept의 경우 나머지 그룹들에 대해 test의 기준이 된다.
+사실상 sprayA를 대변하고 있다고 보면 된다.
+이 값들이 어떻게 계산되는지는 model.matrix() 함수를 사용하여 관찰하면, Estimate이 어떻게 계산될지 추측할 수 있다.
+Pr(>|t|)의 경우는 Intercept에 대한 t-test 결과의 p-value이다. 즉, 유의수준을 0.05라고 했을 때 p-value가 더 작으면 대립가설(Intercept와 같지 않다)을 받아들인다.
+
+
+
