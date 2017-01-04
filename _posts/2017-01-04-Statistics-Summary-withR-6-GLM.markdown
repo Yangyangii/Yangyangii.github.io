@@ -18,7 +18,7 @@ Logistic Regression은 Linear Regression과 다르게 Binary response variable�
 link function을 사용하게 되는데, 쉽게 말하자면 성공확률/실패확률이다.
 또한 아웃풋으로 1이나 0을 반환하는 것이 아니라, 1일 확률과 0일 확률을 반환한다.
 그래서 그 기준을 나누는 적절한 theta를 정하는 것이 이슈가 되기도 한다.
-Logistic Regression에서 Estimate은 ODDS가 Xi가 증가할 때 β1배만큼 증가한다는 뜻이다.
+Logistic Regression에서 Estimate은 ODDS가 Xi가 증가할 때 βi배만큼 증가한다는 뜻이다.
 이 경우 Intercept는 무시해도 된다.
 다음은 Smarket 데이터(S&P Stock Market Data)를 이용해 2005년전까지의 데이터로 학습하고 2005년의 값을 예측한 모델이다.
 
