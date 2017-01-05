@@ -14,9 +14,11 @@ categories: [Statistics]
 
 +	Time Series
 데이터 분석에 있어서 Time Series 데이터들을 어떻게 다룰 것인가에는 여러가지 이슈가 있다.
-Time Series는 대부분 오늘의 데이터가 어제, 그제, 그 전날들의 데이터와 Correlation을 갖고 있기 때문에, 이를 다루는 여러 기법들이 나와있다.
+Time Series 같은 경우에는 x값이 없고 y값만을 가지고 분석을 진행한다.
+대부분 특정 날짜에 y값을 가지고 있다. 그래서 y값의 trend 등을 통해 예측을 하게 된다.
+또한 Time Series는 오늘의 데이터가 어제, 그제, 그 전날들의 데이터와 Correlation을 갖고 있기 때문에, 이를 다루는 여러 기법들이 나와있다.
 그 중에 Smoothing Techniques로는 Moving Average, Exponential Smoothing이 있다.
-Moving Average는 x 값을 최근 몇일간의 평균값으로 취하는 방법이다.
+Moving Average는 y값을 최근 몇일간의 평균값으로 취하는 방법이다.
 
 {% highlight python %}
 > mvAvg <- filter(AirPassengers, rep(1/5, 5), sides = 1)
