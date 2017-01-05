@@ -24,7 +24,7 @@ Logistic Regression에서 Estimate은 Odds가 Xi가 증가할 때 βi배만큼 �
 이 경우 Intercept는 무시해도 된다.
 다음은 Smarket 데이터(S&P Stock Market Data)를 이용해 2005년전까지의 데이터로 학습하고 2005년의 값을 예측한 모델이다.
 
-{% highlight html %}
+{% highlight xml %}
 > install.packages("ISLR")
 > library(ISLR)
 > train.smarket <- (Smarket$Year < 2005)
