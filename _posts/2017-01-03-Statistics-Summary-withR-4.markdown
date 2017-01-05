@@ -22,7 +22,7 @@ Coefficient of Determination: 평균과 비교했을 때 예측치가 실제값�
 
 Example)
 linear model(lm) library를 사용해서 Simple Linear Regression을 실습해본다.
-{% highlight html %}
+{% highlight python %}
 > library(MASS)
 > lm.fit = lm(medv~lstat, data = Boston)
 > summary(lm.fit)
@@ -52,7 +52,7 @@ Multiple R-squared는 y를 x가 54% 정도 대변해준다는 뜻이다.
 F-test는 simple에서 t-test와 동일하다. 506 row이므로 자유도는 504.
 F-statistic == t-value²
 
-{% highlight html %}
+{% highlight python %}
 > with(Boston, plot(lstat, medv, pch="♥", main='Graph'))
 > abline(lm.fit, lwd=4, col='red')
 > abline(coef(lm.fit)[1], coef(lm.fit)[2], col="blue", lwd=2)
@@ -64,7 +64,7 @@ F-statistic == t-value²
 +	Multiple Linear Regression
 여러 독립변수 X1, X2, ..., Xn에 대하여 종속변수 Y를 구하는 기법이다.
 R에서 아래와같이 사용가능하다. step()의 경우에는 multiple linear Regression에서 변수를 어떻게 선정하느냐에 따라 더 좋은 성능이 나오는지 판단해주는 함수이다.
-{% highlight html %}
+{% highlight python %}
 > three.fit <- lm(medv ~ crim + zn + indus, Boston)
 > all.fit <- lm(medv ~ ., Boston)
 > summary(myfit)
@@ -74,7 +74,7 @@ R에서 아래와같이 사용가능하다. step()의 경우에는 multiple line
 하지만 변수선정 함수를 사용하지 않아도 분석에 있어서 Scatter Plot을 통해서 직관적으로 보고 판단하는 방법도 가능하다.
 이외에도 lm.beta, car의 vif, lmtest, leaps 등의 라이브러리로 테스트하고 변수를 선별하는 작업들이 가능하다.
 
-{% highlight html %}
+{% highlight python %}
 > lm.out <- lm(count ~ spray, data = InsectSprays)
 > summary(lm.out)
 

@@ -35,7 +35,7 @@ ANOVA의 경우에는 statistic을 구할 때 Between groups와 Within groups로
 
 
 Box Plot을 관찰해보면 test를 하기에 유의해보인다. 그러므로 One-way ANOVA test를 진행해보자
-{% highlight sql %}
+{% highlight python %}
 > oneway.test(count ~ spray, data = InsectSprays)
 
 	One-way analysis of means (not assuming equal variances)
