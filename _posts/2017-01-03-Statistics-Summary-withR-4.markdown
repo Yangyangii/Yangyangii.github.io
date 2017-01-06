@@ -45,7 +45,7 @@ Residual standard error: 6.216 on 504 degrees of freedom
 Multiple R-squared:  0.5441,	Adjusted R-squared:  0.5432 
 F-statistic: 601.6 on 1 and 504 DF,  p-value: < 2.2e-16
 {% endhighlight %}
-t value는 Estimate / Std.Error 이며, Pr(>|t|)는 p-value를 나타낸다.
+t value는 Estimate / Std.Error 이며, Pr(>|t|)는 t-test의 p-value를 나타낸다.
 p-value가 0에 가까우므로 유의하다고 볼 수 있다.
 Residual standard error는 여러 잔차의 차이? Multiple일 때 쓰임.
 Multiple R-squared는 y를 x가 54% 정도 대변해준다는 뜻이다.
