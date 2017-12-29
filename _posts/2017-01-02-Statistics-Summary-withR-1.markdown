@@ -36,11 +36,11 @@ Example)
 {% highlight python %}
 > plot(seq(0,6,1), dbinom(seq(0,6,1), 6, 0.3), type='h', lwd=3)
 {% endhighlight %}
-![Screenshot Binomial](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-1.jpeg  "Screenshot Binomial")
+![Screenshot Binomial](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Statistics-Summary-withR-1.jpeg  "Screenshot Binomial")
 {% highlight python %}
 > plot(seq(0,6,1), dbinom(seq(0,6,1), 6, 0.5), type='h', lwd=3)
 {% endhighlight %}
-![Screenshot Binomial2](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-2.jpeg  "Screenshot Binomial2")
+![Screenshot Binomial2](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Statistics-Summary-withR-2.jpeg  "Screenshot Binomial2")
 
 +	Poisson Distribution
 단위시간에 일어나는 갯수
@@ -51,7 +51,7 @@ Example)
 {% highlight python %}
 > plot(seq(0,4,1), dpois(seq(0,4,1), 0.5), type='h', lwd=3)
 {% endhighlight %}
-![Screenshot Poissong](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-3.jpeg  "Screenshot Poissong")
+![Screenshot Poissong](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Statistics-Summary-withR-3.jpeg  "Screenshot Poissong")
 Example2)
 날마다 불량률이 0.5일 때, 오늘 불량이 나지 않을 확률과 3번이상 불량이 날 확률.
 {% highlight python %}

@@ -33,8 +33,8 @@ Correlation은 그룹 별로 잘 나눠서 관찰하는 것이 중요하며, Non
 (URL: [https://www.buzzfeed.com/kjh2110/the-10-most-bizarre-correlations?utm_term=.gb4B9e4dpj#.nbxDb4qkOL/](잘못된 Correlation 해석))
 아래는 Wikipedia에 있는 Simpson's Paradox 예시들이다.
 그룹별로 색깔을 다르게 시각화하면 이런 것들을 예방할 수 있다.
-![Screenshot Simpson'sParadox](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Simpson's_paradox.png  "Screenshot Simpson'sParadox")
-![Screenshot Kidney_stone_treatment](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Kidney_stone_treatment.PNG  "Screenshot Kidney_stone_treatment")
+![Screenshot Simpson'sParadox](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Simpson's_paradox.png  "Screenshot Simpson'sParadox")
+![Screenshot Kidney_stone_treatment](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Kidney_stone_treatment.PNG  "Screenshot Kidney_stone_treatment")
 하지만 반대로 상관관계가 그룹별로는 강하지만 개개별로 했을 경우에는 약한 경우가 많다.
 이런 경우에는 그룹별로만 판단하면 안된다.(Ecological Fallacy)
 

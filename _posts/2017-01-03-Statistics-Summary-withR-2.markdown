@@ -29,13 +29,13 @@ Example)
 {% highlight python %}
 > hist(rbinom(10000, 1, 0.9), breaks = c(-0.5,0.5,1.5), freq=F, xlab='x', main='Bernoulli(0.9)')
 {% endhighlight %}
-![Screenshot CentralLimitTheorem](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-4.jpeg  "Screenshot CentralLimitTheorem")
+![Screenshot CentralLimitTheorem](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Statistics-Summary-withR-4.jpeg  "Screenshot CentralLimitTheorem")
 {% highlight python %}
 > x <- numeric()
 > for (i in 1:10000) x <- c(x, mean(rbinom(50,1,0.9)))
 > hist(x, freq = F, main='n=50')
 {% endhighlight %}
-![Screenshot CentralLimitTheorem2](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Statistics-Summary-withR-5.jpeg  "Screenshot CentralLimitTheorem2")
+![Screenshot CentralLimitTheorem2](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Statistics-Summary-withR-5.jpeg  "Screenshot CentralLimitTheorem2")
 
 
 +	Hypothesis Testing

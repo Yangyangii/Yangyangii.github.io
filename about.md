@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
 
-[Jinhyeok Yang][myhome]. I'm studying on deeplearning project. My some various code can be found in the [GitHub repository][mygithub].
+[Jinhyeok Yang][myhome]. I'm studying on deeplearning project.
 
 [mygithub]: https://github.com/Yangyangii
 [myhome]: https://yangyangii.github.io

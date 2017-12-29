@@ -73,7 +73,7 @@ k개의 집합으로 나눠서 train set과 test set을 교차해가며 모델�
 {% endhighlight %}
 확인해 보면 Cross-validation을 거친 lambda로 Ridge Regression을 했을 경우 가장 성능이 좋은 것을 확인할 수 있다.
 아래는 Cross validation을 plot으로 그린 것이다.
-![Screenshot Cross-validation](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/RR-Cross-Validation.jpeg  "Screenshot Cross-validation")
+![Screenshot Cross-validation](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/RR-Cross-Validation.jpeg  "Screenshot Cross-validation")
 
 - Lasso(Least Absolute Shrinkage and Selection Operator)
 절대값의 합에 Penalty를 주는 것이다.

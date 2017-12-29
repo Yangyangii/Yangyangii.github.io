@@ -21,7 +21,7 @@ X를 Y로 예측하려면 식을 바꿔줘야한다. Regression은 Symmetric이 
 대체로 Ordinary Least Square(OLS) 추정 방법으로 오차의 제곱의 합을 최소화하는 기법을 사용한다.
 Coefficient of Determination: 평균과 비교했을 때 예측치가 실제값에 얼마나 가까운지를 나타내는 것으로 클수록 좋다. 일반적으로 R-square로 나타낸다. 하지만 이것이 모델의 예측 성능을 나타내지는 않는다.(overfitting의 가능성도 있으며, test 데이터로 측정해봐야 한다)
 아래 그림에서 SSR/SST로 계산하며, 실제로 Correlation Coefficient(r²)를 나타낸다.
-![Screenshot RSquare](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/R-square.jpeg  "Screenshot RSquare")
+![Screenshot RSquare](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/R-square.jpeg  "Screenshot RSquare")
 
 Example)
 linear model(lm) library를 사용해서 Simple Linear Regression을 실습해본다.
@@ -61,7 +61,7 @@ F-statistic == t-value²
 > abline(coef(lm.fit)[1], coef(lm.fit)[2], col="blue", lwd=2)
 {% endhighlight %}
 실제로 두 Column에 대해 plot을 그려보면 Correlation이 높아보이며, Simple Linear Regression에 대해 잘 대변해주는 Line이 그려지는 것을 확인할 수 있다. coef()를 통해 함수가 정상적으로 적용됐는지 확인할 수 있다.
-![Screenshot Simple-Linear-Regression](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Simple-Linear-Regression.jpeg  "Screenshot Simple-Linear-Regression")
+![Screenshot Simple-Linear-Regression](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Simple-Linear-Regression.jpeg  "Screenshot Simple-Linear-Regression")
 
 
 +	Multiple Linear Regression

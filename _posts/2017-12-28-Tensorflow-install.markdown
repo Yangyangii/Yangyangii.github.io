@@ -24,9 +24,9 @@ cover:  "/assets/instacode.png"
 +	Anaconda 설치가 끝나고나면 윈도우 시작 메뉴에서 anaconda라고 검색한다.
 +	Anaconda Prompt 실행
 {% highlight ruby %}
-c:\\> conda create -n tensorflow
-c:\\> activate tensorflow
-(tensorflow) c:\\> pip install --ignore-installed --upgrade tensorflow
+c:\> conda create -n tensorflow
+c:\> activate tensorflow
+(tensorflow) c:\> pip install --ignore-installed --upgrade tensorflow
 {% endhighlight %}
 +	되도록이면 네트워크가 느리지 않은 곳에서 하길 바란다. 실패할 가능성이 있음.
 +	기존에 다른 Python이 설치되어 있을 경우, 미리 제거하거나 환경변수를 삭제하길 권장한다. 충돌이 일어날 수 있음.
@@ -35,7 +35,7 @@ c:\\> activate tensorflow
 ## Test
 +	TensorFlow 설치가 끝나면 다음과 같이 테스트를 진행한다.
 {% highlight ruby %}
-(tensorflow) c:\\> python
+(tensorflow) c:\> python
 >>> import tensorflow as tf
 >>> hello = tf.constant('Hello, TensorFlow!')
 >>> sess = tf.Session()
@@ -45,6 +45,8 @@ c:\\> activate tensorflow
 
 ## References
 +   <em>[https://www.tensorflow.org/install/install_windows#installing_with_anaconda](https://www.tensorflow.org/install/install_windows#installing_with_anaconda)</em>
++	<em>[https://www.tensorflow.org/install/install_mac#installing_with_anaconda](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)</em>
++	<em>[https://www.anaconda.com/download/](https://www.anaconda.com/download/)</em>
 
 ## Trouble Shooting
-+	
++	맥 유저도 거의 동일하게 설치하며 단 아나콘다 버젼은 레퍼런스에서 맥버전으로 다운받아야함. 자세한 내용은 reference 참고.

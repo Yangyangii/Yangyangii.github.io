@@ -29,7 +29,7 @@ Moving Average는 y값을 최근 몇일간의 평균값으로 취하는 방법�
 > par(new=T)
 > plot(mvAvg, col = "red", ylab = "AirPassengers")
 {% endhighlight %}
-![Screenshot MovingAverage](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/TimeSeries-MovingAverage.jpeg  "Screenshot MovingAverage")
+![Screenshot MovingAverage](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/TimeSeries-MovingAverage.jpeg  "Screenshot MovingAverage")
 
 
 Exponential Smoothing은 α를 정해서 과거로 갈수록 (1-α)를 거듭제곱하여 과거의 데이터에 영향을 받지만 α에 따라 강하게 받을지 약하게 받을지를 정하는 방법이다.
@@ -41,14 +41,14 @@ Exponential Smoothing은 α를 정해서 과거로 갈수록 (1-α)를 거듭제
 > plot(HoltWinters(AirPassengers, alpha = 0.75, beta = F, gamma = F), main = "Alpha = 0.75")
 > plot(HoltWinters(AirPassengers, alpha = 1.0, beta = F, gamma = F), main = "Alpha = 1")
 {% endhighlight %}
-![Screenshot ExponentialSmoothing](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Timeseries-Exponential.jpeg  "Screenshot ExponentialSmoothing")
+![Screenshot ExponentialSmoothing](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Timeseries-Exponential.jpeg  "Screenshot ExponentialSmoothing")
 
 HoltWinters를 통해 forecast 함수를 쓰는 경우 seasonality 등의 요소를 고려해 자동으로 예측한 테이블을 반환해준다.
 
 {% highlight python %}
 > plot(forecast(HoltWinters(AirPassengers), h = 12))
 {% endhighlight %}
-![Screenshot ForecastHoltwinters](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Forecast-Holtwinters.jpeg  "Screenshot ForecastHoltwinters")
+![Screenshot ForecastHoltwinters](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Forecast-Holtwinters.jpeg  "Screenshot ForecastHoltwinters")
 
 
 +	ARIMA(AutoRegressive Integrated Moving Average)
@@ -75,6 +75,6 @@ AIC=-701.92   AICc=-701.73   BIC=-693.29
 > arima.fc <- forecast(arima.fit, h = 24)
 > plot(arima.fc)
 {% endhighlight %}
-![Screenshot ARIMA](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/ARIMA-Forecast.jpeg  "Screenshot ARIMA")
+![Screenshot ARIMA](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/ARIMA-Forecast.jpeg  "Screenshot ARIMA")
 
 --

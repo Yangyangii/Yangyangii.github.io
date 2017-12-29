@@ -23,7 +23,7 @@ Chi-squared Test를 하는 경우는 다음 3가지와 같다.
 독립성과 동질성은 테스트 방법이 동일하다.
 먼저 Test-statistic 계산 공식은 아래와 같다.
 
-![Screenshot Chi-squared-test](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/static/img/_posts/Chi-squared-test.PNG  "Screenshot Chi-squared-test")
+![Screenshot Chi-squared-test](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Chi-squared-test.PNG  "Screenshot Chi-squared-test")
 
 
 독립성과 동질성에서 기대값은 (Row Total * Col Total) / Total 이다.
