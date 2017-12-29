@@ -46,7 +46,7 @@ c:\> activate tensorflow
 ## Jupyter Notebook
 +	Jupyter Notebook을 사용하여 실습시간에 프로그래밍할 예정이므로 잘 작동하는지 확인 바랍니다.
 {% highlight ruby %}
-(tensorflow) c:\> Jupyter notebook
+(tensorflow) c:\> jupyter notebook
 {% endhighlight %}
 +	위 명령어 입력 후 브라우저에 뜨면 New > Python3 로 노트북파일 생성.
 +	위의 Tensorflow test 다시 테스트.
