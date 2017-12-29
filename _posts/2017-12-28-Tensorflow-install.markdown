@@ -43,6 +43,17 @@ c:\> activate tensorflow
 {% endhighlight %}
 
 
+## Jupyter Notebook
++	Jupyter Notebook을 사용하여 실습시간에 프로그래밍할 예정이므로 잘 작동하는지 확인 바랍니다.
+{% highlight ruby %}
+(tensorflow) c:\> Jupyter notebook
+{% endhighlight %}
++	위 명령어 입력 후 브라우저에 뜨면 New > Python3 로 노트북파일 생성.
++	위의 Tensorflow test 다시 테스트.
+![Screenshot Jupyter](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Jupyter-Notebook.JPG  "Screenshot Jupyter")
+![Screenshot Jupyter](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/Jupyter-test.JPG  "Screenshot Jupyter")
+
+
 ## References
 +   <em>[https://www.tensorflow.org/install/install_windows#installing_with_anaconda](https://www.tensorflow.org/install/install_windows#installing_with_anaconda)</em>
 +	<em>[https://www.tensorflow.org/install/install_mac#installing_with_anaconda](https://www.tensorflow.org/install/install_mac#installing_with_anaconda)</em>
