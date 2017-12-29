@@ -30,6 +30,7 @@ c:\> activate tensorflow
 {% endhighlight %}
 +	되도록이면 네트워크가 느리지 않은 곳에서 하길 바란다. 실패할 가능성이 있음.
 +	기존에 다른 Python이 설치되어 있을 경우, 미리 제거하거나 환경변수를 삭제하길 권장한다. 충돌이 일어날 수 있음.
++	다른 Python을 사용할 일이 없는 경우, anaconda environment 없이 마지막 텐서플로우 설치 명령어만 사용해도 무관하다.
 
 
 ## Test
