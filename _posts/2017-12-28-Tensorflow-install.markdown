@@ -17,7 +17,7 @@ cover:  "/assets/instacode.png"
 +	[Anaconda_64bit-Download](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe)
 +	[Anaconda_32bit-Download](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86.exe)
 +	혹시 본인 OS가 32bit라면 해당 버전을 다운받으면 된다.
-+	설치 시에는 Default 설정대로 모두 Next를 하면 된다.
++	설치 시에는 Default 설정대로 모두 Next를 하면 된다.(다른 환경의 파이썬을 동시에 사용하는게 아니라면 Add Anaconda to my PATH environment variable 체크 권장)
 
 
 ## Tensorflow Install
