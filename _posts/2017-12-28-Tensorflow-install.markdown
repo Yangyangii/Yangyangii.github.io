@@ -17,26 +17,24 @@ cover:  "/assets/instacode.png"
 +	[Anaconda_64bit-Download](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86_64.exe)
 +	[Anaconda_32bit-Download](https://repo.continuum.io/archive/Anaconda3-5.0.1-Windows-x86.exe)
 +	혹시 본인 OS가 32bit라면 해당 버전을 다운받으면 된다.
-+	설치 시에는 Default 설정대로 모두 Next를 하면 된다.(다른 환경의 파이썬을 동시에 사용하는게 아니라면, All Users 옵션 체크 및 Add Anaconda to my PATH environment variable 옵션 체크 권장)
++	설치 시에는 Default 설정대로 모두 Next를 하면 추가적인 조치들이 필요할 수 있으므로 다른 환경의 파이썬을 동시에 사용하는게 아니라면, All Users 옵션 체크 및 Add Anaconda to my PATH environment variable 옵션 체크 권장
 
 
-## Tensorflow Install
+## Tensorflow Install(수정. 18.01.02)
 +	Anaconda 설치가 끝나고나면 윈도우 시작 메뉴에서 anaconda라고 검색한다.
 +	Anaconda Prompt 실행
 {% highlight ruby %}
-c:\Users\Jin> conda create -n tensorflow
-c:\Users\Jin> activate tensorflow
-(tensorflow) c:\Users\Jin> pip install --ignore-installed --upgrade tensorflow
+C:\Users\Jin> pip install --ignore-installed --upgrade tensorflow
 {% endhighlight %}
 +	되도록이면 네트워크가 느리지 않은 곳에서 하길 바란다. 실패할 가능성이 있음.
 +	기존에 다른 Python이 설치되어 있을 경우, 미리 제거하거나 환경변수를 삭제하길 권장한다. 충돌이 일어날 수 있음.
-+	다른 Python을 사용할 일이 없는 경우, anaconda environment 없이 마지막 텐서플로우 설치 명령어만 사용해도 무관하다.
++	다른 Python을 사용할 일이 없는 경우, anaconda environment 없이 텐서플로우 설치 명령어만 사용해도 무관하다.(공식 사이트에서는 tensorflow를 위한 conda environment를 만들어서 사용하기를 권장하고 있음)
 
 
 ## Test
 +	TensorFlow 설치가 끝나면 다음과 같이 테스트를 진행한다.
 {% highlight ruby %}
-(tensorflow) c:\Users\Jin> python
+c:\Users\Jin> python
 >>> import tensorflow as tf
 >>> hello = tf.constant('Hello, TensorFlow!')
 >>> sess = tf.Session()
@@ -47,7 +45,7 @@ c:\Users\Jin> activate tensorflow
 ## Jupyter Notebook
 +	Jupyter Notebook을 사용하여 실습시간에 프로그래밍할 예정이므로 잘 작동하는지 확인 바랍니다.
 {% highlight ruby %}
-(tensorflow) c:\Users\Jin> jupyter notebook
+c:\Users\Jin> jupyter notebook
 {% endhighlight %}
 +	위 명령어 입력 후 브라우저에 뜨면 New > Python3 로 노트북파일 생성.
 +	위의 Tensorflow test 다시 테스트.
@@ -62,3 +60,5 @@ c:\Users\Jin> activate tensorflow
 
 ## Trouble Shooting
 +	맥 유저도 거의 동일하게 설치하며 단 아나콘다 버젼은 레퍼런스에서 맥버전으로 다운받아야함. 자세한 내용은 reference 참고.
++	공식사이트에서 권장하는 방법으로 가이드를 했더니 많은 분들께서 어려워하는 것 같아 가장 간단한 방법으로 수정하였습니다.
++	경고 및 에러의 경우 일단 구글링을 통해 1차 해결을 시도하신 후에 안되면 댓글로 문의 부탁드립니다. 모든 예외 케이스를 커버하기는 저도 어렵습니다.
