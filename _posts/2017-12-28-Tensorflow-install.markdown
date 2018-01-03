@@ -21,12 +21,14 @@ cover:  "/assets/instacode.png"
 
 
 ## Tensorflow Install(수정. 18.01.02)
-+	Anaconda 설치가 끝나고나면 윈도우 시작 메뉴에서 anaconda라고 검색한다.
-+	Anaconda Prompt 실행
++	Anaconda 설치가 끝나고나면 윈도우 시작 메뉴에서 cmd라고 검색한다.(혹은 윈도우키+R)
++	명령 프롬프트 실행(오른쪽 클릭 후 관리자 권한으로 실행)
 {% highlight ruby %}
 C:\Users\Jin> pip install --ignore-installed --upgrade tensorflow
 {% endhighlight %}
 +	되도록이면 네트워크가 느리지 않은 곳에서 하길 바란다. 실패할 가능성이 있음.
++	GPU버젼이 아닌 CPU버젼이 설치되는지 확인.
++	GPU버전을 위해서는 CUDA, cudnn 등 추가적인 조치가 필요함.
 +	기존에 다른 Python이 설치되어 있을 경우, 미리 제거하거나 환경변수를 삭제하길 권장한다. 충돌이 일어날 수 있음.
 +	다른 Python을 사용할 일이 없는 경우, anaconda environment 없이 텐서플로우 설치 명령어만 사용해도 무관하다.(공식 사이트에서는 tensorflow를 위한 conda environment를 만들어서 사용하기를 권장하고 있음)
 
