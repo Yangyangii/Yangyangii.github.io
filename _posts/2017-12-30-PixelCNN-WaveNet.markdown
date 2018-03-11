@@ -3,7 +3,7 @@ layout: post
 title:  "Pixel CNN & WaveNet Review"
 date:   2017-12-30 19:00:00 +0700
 author: Jin
-categories: Speech Synthesis
+categories: SpeechSynthesis
 tags:	TTS SpeechSynthesis GenerativeModel
 cover:  "/assets/instacode.png"
 ---
@@ -37,11 +37,11 @@ Pixel CNN과 Wavenet은 Deepmind에서 냈다.
 
 +	CIFAR-10에서 PixelRNN보다 약간 안 좋은 성능이었고, ImageNet에서는 더 좋았다. 학습 속도는 2배 빨랐다. (32GPU 60시간)
 
-## Pixel CNN 장점
+# Pixel CNN 장점
 +	Likelihood를 계산하는 방법을 제공한다
 +	학습할 때 GAN보다 더 안정적이다
 +	이산 데이터와 연속 데이터 모두에서 작동한다
-## Pixel CNN 장점
+# Pixel CNN 단점
 +	모델이 generation 순서를 어느정도 띤다
 +	샘플링이 느리다
 +	학습이 느리다(pixel RNN보다는 빠름)
