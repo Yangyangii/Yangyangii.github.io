@@ -26,11 +26,19 @@ cover:  "/assets/instacode.png"
 +	전처리 작업을 몇가지 테스트 중이나 기본적인 몇가지만 넣은 상태이므로 개선의 여지가 있다.
 +	다른 모델도 마찬가지겠지만, 데이터의 Quality가 상당히 중요해 보인다. Audio fidelity뿐만 아니라, transcript도...
 
-<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3" controls loop> Unable to load song1. </audio>
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3" controls loop> Unable to load song. </audio>
+"오늘 여러분을 이렇게 목소리로 만나게 되어 반갑습니다."
+
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_2.mp3" controls loop> Unable to load song. </audio>
+"저의 블로그에 찾아와주셔서 정말 감사합니다."
+
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_3.mp3" controls loop> Unable to load song. </audio>
+"사랑합니다 여러분 뿌잉뿌잉."
 
 
 ## 결론
 +	현재 데이터의 Transcript가 불완전한 것이 Sample의 quality에 가장 큰 악영향을 주고 있는 것 같다.(KSS 데이터에 비해 가장 부족한 점. KSS로 학습시에는 매우 깔끔함)
++	특히 Training 데이터에 없었던 발음이 나올 경우에는 전체 문장이 불안정해지기도 한다.
 +	뭐 어찌됐든, 비교적(?) 간단한 작업만으로 정말 흉내는 낸다. 2-3번 들으면 무슨말인지도 알아들을 수 있다.
 
 

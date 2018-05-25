@@ -37,15 +37,17 @@ Pixel CNN과 Wavenet은 Deepmind에서 냈다.
 
 +	CIFAR-10에서 PixelRNN보다 약간 안 좋은 성능이었고, ImageNet에서는 더 좋았다. 학습 속도는 2배 빨랐다. (32GPU 60시간)
 
-# Pixel CNN 장점
+## Pros.
 +	Likelihood를 계산하는 방법을 제공한다
 +	학습할 때 GAN보다 더 안정적이다
 +	이산 데이터와 연속 데이터 모두에서 작동한다
-# Pixel CNN 단점
+
+
+## Cons.
 +	모델이 generation 순서를 어느정도 띤다
 +	샘플링이 느리다
 +	학습이 느리다(pixel RNN보다는 빠름)
-+	샘플 퀄리티가 별로 안 좋다
++	샘플 퀄리티가 별로 안 좋다(pixel RNN에 비해서)
 +	Feature 학습을 위해 적용이 안된다
 
 ## WaveNet
@@ -62,7 +64,7 @@ Pixel CNN과 Wavenet은 Deepmind에서 냈다.
 +	Gated unit에 또다른 인풋을 더함으로써 이 모델을 conditional하게 만들 수 있다. Conditional input은 언어 feature나 speaker의 identity인 one-hot vector가 될 수 있다.
 +	Receptive field를 확장하기 위해 Dilated convolution을 사용했지만, receptive field는 겨우 약 300milliseconds다. 그래서 context stacks라고 불리는 또다른 모듈을 더한다. Context stacks는 낮은 해상도에서도 작동하고, 적은 parameter에서 더 이전의 신호를 볼 수 있다.(Receptive field를 계산함에 있어서 몇몇 오해의 소지가 있으나 다음 글에서 언급하도록 함)
 +	Wavenet의 결과는 놀라울 정도로 좋다. [https://deepmind.com/blog/wavenet-generative-model-raw-audio/](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)에서 확인할 수 있다. WaveNet은 느리다고 알려져 있지만 Fast WaveNet, Parallel WaveNet에서 간단하게 가속하는 방법을 제안(Parallel은 결코 간단하지 않다...)하고 있다. 단순히 몇몇 redundant 연산을 제거하는 방법이다(마치 브루트 포스에서 다이나믹 프로그래밍으로 바꾸는 느낌 같은 느낌). PixelCNN과 마찬가지로 학습속도는 느리다.
-+	WaveNet, Parallel WaveNet은 조만간 리뷰 글을 추가로 올릴 예정.
++	WaveNet, Tacotron 등은 조만간 번역이 아닌 나의 리뷰 글을 추가로 올릴 예정.
 
 
 ## References
