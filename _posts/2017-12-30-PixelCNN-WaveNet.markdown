@@ -3,8 +3,8 @@ layout: post
 title:  "Pixel CNN & WaveNet Review"
 date:   2017-12-30 19:00:00 +0700
 author: Jin
-categories: SpeechSynthesis
-tags:	TTS SpeechSynthesis GenerativeModel
+categories: Speech_Synthesis
+tags:	TTS Speech_Synthesis GenerativeModel
 cover:  "/assets/instacode.png"
 ---
 
