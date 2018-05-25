@@ -28,7 +28,7 @@ cover:  "/assets/instacode.png"
 +	전처리 작업을 몇가지 테스트 중이나 기본적인 몇가지만 넣은 상태이므로 개선의 여지가 있다.
 +	다른 모델도 마찬가지겠지만, 데이터의 Quality가 상당히 중요해 보인다. Audio fidelity뿐만 아니라, transcript도...
 
-<audio ref='themeSong' src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3
+<audio ref='themeSong' src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.wav
 " autoPlay loop></audio>
 
 
