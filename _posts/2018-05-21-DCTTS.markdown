@@ -3,12 +3,10 @@ layout: post
 title:  "DCTTS를 이용한 손석희 앵커 목소리 흉내내기"
 date:   2018-05-21 19:00:00 +0700
 author: Jin
-categories: SpeechSynthesis
-tags:	TTS SpeechSynthesis GenerativeModel DCTTS 손석희
+categories: Speech_Synthesis
+tags:	TTS Speech_Synthesis GenerativeModel DCTTS 손석희
 cover:  "/assets/instacode.png"
 ---
-
-+	DCTTS 오픈소스와 JTBC 뉴스룸 손석희 앵커 데이터를 이용한 학습 결과
 
 ## DCTTS
 +	Neural Speech Synthesis Model은 2016년에 구글의 WaveNet이 나온 이후 17년도에 상당히 좋은 모델이 우후죽순 쏟아져 나왔다.(WaveNet은 사실상 Vocoder로 쓰고있다)
@@ -29,6 +27,11 @@ cover:  "/assets/instacode.png"
 +	다른 모델도 마찬가지겠지만, 데이터의 Quality가 상당히 중요해 보인다. Audio fidelity뿐만 아니라, transcript도...
 
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3" controls loop> Unable to load song1. </audio>
+
+
+## 결론
++	현재 데이터의 Transcript가 불완전한 것이 Sample의 quality에 가장 큰 악영향을 주고 있는 것 같다.(KSS 데이터에 비해 가장 부족한 점. KSS로 학습시에는 매우 깔끔함)
++	뭐 어찌됐든, 비교적(?) 간단한 작업만으로 정말 흉내는 낸다. 2-3번 들으면 무슨말인지도 알아들을 수 있다.
 
 
 ## References
