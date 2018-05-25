@@ -31,6 +31,13 @@ cover:  "/assets/instacode.png"
 <audio ref='themeSong' src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3
 " autoPlay loop></audio>
 
+<source src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3
+" type="audio/mpeg"></audio>
+
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/son_1.mp3" controls loop> Unable to load song1. </audio>
+
+<audio src="/assets/_posts/audios/son_1.mp3" controls loop> Unable to load song. </audio>
+
 
 ## References
 +   <em>[DCTTS [Tachibana, H., et al./ 2017]](https://arxiv.org/pdf/1710.08969)</em>
