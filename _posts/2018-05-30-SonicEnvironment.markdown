@@ -25,6 +25,7 @@ pip install cmake
 pip install https://storage.googleapis.com/gym-retro/builds/gym_retro-0.5.2-cp36-cp36m-linux_x86_64.whl
 {% endhighlight %}
 +	Steam 가입 후 다운로드 -> <em>[Link](https://store.steampowered.com/about/)</em>
++	다음 링크에서 소닉 구매(5,500원) <em>[Sonic1](https://store.steampowered.com/app/71113/Sonic_The_Hedgehog/)</em>
 +	curl python-apt zenity 통해 3가지 패키지를 설치 후 스팀 설치
 {% highlight python %}
 sudo apt-get install curl python-apt zenity lib32gcc1
@@ -50,7 +51,8 @@ pip install https://storage.googleapis.com/gym-retro/builds/gym_retro-0.5.2-cp36
 +	리눅스 버젼에서와 마찬가지로 최신버젼에서 달라진 코드를 수정해준다.
 +	pip로 설치된 retro의 lib 폴더를 찾아가서 retro/retro/scripts/import_sega_classics.py의 코드를 다음 링크의 코드로 바꿔준다(아마 설치된 버젼은 window platform을 지원하지 않는다) <em>[import_sega_classics.py](https://github.com/openai/retro/blob/master/retro/scripts/import_sega_classics.py)</em>
 
-+	Steam 가입 후 설치 -> <em>[Link](https://store.steampowered.com/about/)</em>
++	Steam 가입 후 설치 및 로그인 -> <em>[Link](https://store.steampowered.com/about/)</em>
++	다음 링크에서 소닉 구매(5,500원) <em>[Sonic1](https://store.steampowered.com/app/71113/Sonic_The_Hedgehog/)</em>
 +	아래 명령어를 통해 스팀에 연결하여 ROM 다운 및 설치
 {% highlight python %}
 python -m retro.import.sega_classics
