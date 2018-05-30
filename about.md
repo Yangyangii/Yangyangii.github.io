@@ -6,14 +6,14 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
 
-[Jinhyeok Yang][myhome]
+[Jinhyeok Yang][myhome]  
 
-[Github][mygithub]
+[Github][mygithub]  
 
-Research on Deeplearning & Neural Speech Synthesis
-
-
-Interest on GameAI & Reinforcement Learning
+Research on Deeplearning & Neural Speech Synthesis  
+  
+  
+Interest on GameAI & Reinforcement Learning  
 
 
 [mygithub]: https://github.com/Yangyangii
