@@ -9,12 +9,12 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Jin's Blog
-subtitle: "Machine Learning & Computer Engineering blog"
+title: Yangyangii Blog
+subtitle: "Deep Learning & Computer Engineering Blog"
 email: yjh2067@gmail.com
 name: Jinhyeok Yang
 description: >
-  Machine Learning & Computer Engineering
+  Deep Learning & Computer Engineering
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -51,14 +51,17 @@ descriptions:
   - cat: jekyll
     desc: "Posts describing Jekyll setup techniques."
 
-  - cat: Machine Learning
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Reinforcement_Learning
+    desc: "Deep interest"
+
+  - cat: Speech_Synthesis
+    desc: "My main research projects"
 
   - cat: R
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    desc: "Just some statistics and R posts for my study"
 
   - cat: Spark
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    desc: "Posts describing Hadoop ecosystem techniques during government support projects."
 
 # Social icons and sharing options
 #
