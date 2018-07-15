@@ -88,7 +88,7 @@ for i in range(777):
 
 +	이제부터 시퍼런 고슴도치를 만끽해보자
 
-![Sonic Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/RL/sonic-sample.JPG  "Sonic")
+![Sonic Screenshot](/assets/_posts/RL/sonic-sample.JPG  "Sonic")
 
 ## References
 +   <em>[정원석님 블로그](https://wonseokjung.github.io//openairetro/update/Retro-1/)</em>
