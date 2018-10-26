@@ -110,11 +110,9 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Development of mobile text image immediate translator (2016. 6. ~ 2017. 5.)
 
-![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator1-1.jpg "translator1")
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator1.jpg "translator1")
 
-![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator1-2.jpg "translator2")
-
-![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator2.jpg "translator3")
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator2.jpg "translator2")
 
 * Development of simple Kakaotalk chatbot (2017. 5.)
 
