@@ -72,9 +72,9 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Bronze medal, National Robotics Science Competition (2007)
 
-* HGU Intramural Programming Competition :: 3rd place. Received an award of $300 (2016)
+* HGU Intramural Programming Competition :: 3rd place. (2016)
 
-* Posco AI Challenge :: 8th place, but extra encouragement prize. Received an award of $500 (2018)
+* Posco AI Challenge :: 8th place, but extra encouragement prize. (2018)
 
 <br />
 
@@ -118,7 +118,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Implementation of various GAN models with pyTorch [[Link]](https://github.com/Yangyangii/GAN-Tutorial) (2018. 4.)
 
-* Attending 2018 OpenAI Retro Contest :: 119th... T.T (2018. 6.)
+* Attending 2018 OpenAI Retro Contest :: 119th... OTL.. (2018. 6.)
 
 * Implementation of DQN & PG variants with pyTorch [[Link]](https://github.com/Yangyangii/deep-rl-pytorch) (2018. 6.)
 
