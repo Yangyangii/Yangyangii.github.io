@@ -26,7 +26,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 <br />
 
-## My Hometown
+## Hometown
 
 * Gokseong. Yeah, THE Gokseong you know.
 
