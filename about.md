@@ -22,7 +22,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 ## Dream
 
-* Game AI contents leader; Planning, researching, and managing future AI contents. e.g. control capability of monsters, affinity with NPC, Creating various jobs not manually programming, intelligent NPC subordinate, and etc. (maybe after 10 years?)
+* <b>Leading the area of Game AI contents;</b> Planning, researching, and managing future AI contents. e.g. control capability of monsters, affinity with NPC, Creating various jobs not manually programming, intelligent NPC subordinate, and etc. (maybe after 10 years?)
 
 <br />
 
@@ -36,7 +36,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * B.S. in CS. Handong Global University (2011. 2. ~ 2018. 2.)
 
-* M.S. in AI. Handong Global University (2018. 2. ~ Present)
+* M.S. in AI. Handong Global University (2018. 2. ~ 2019. 6.)
 
 <br />
 
@@ -52,23 +52,23 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 ## Work Experiences
 
-* Research Intern, Skelter Labs (2018. 6. ~ 2018. 8.)
+* <b>Research Intern, Skelter Labs.</b> Implementation of Korean multi-speaker speech synthesis system with TensorFlow (2018. 6. ~ 2018. 8.)
 
 <br />
 
 ## Research Experiences
 
-* Emotion-aware music recommenadation (2016. 1. ~ 2016. 3.)
+* Emotion-aware music recommenadation with scikit-learn (2016. 1. ~ 2016. 3.)
 
-* Big-data analysis system for T-commerce (2016. 6. ~ 2016. 12.)
+* Big-data analysis system for T-commerce with CDH, W-Shopping (2016. 6. ~ 2016. 12.)
 
-* Multi task learning using CNN for large-scale Hangul character and font recognition (2017. 4. ~ 2017. 10.)
+* Multi task learning using CNN for large-scale Hangul character and font recognition with TensorFlow, ETRI. (2017. 4. ~ 2017. 10.)
 
-* Neural speech synthesis with external information (2018. 1. ~ Present)
+* Neural speech synthesis with external information, SkelterLabs. (2018. 1. ~ Present)
 
 <br />
 
-## Award
+## Awards
 
 * Bronze medal, National Robotics Science Competition (2007)
 
@@ -78,7 +78,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 <br />
 
-## Scholarships
+## Scholarship
 
 * National Science and Technology Scholarship, Korean Student Aid Foundation (2011. ~ 2017.)
 
@@ -92,7 +92,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Building RPG Game server with entire file set already created (2007)
 
-* Development of web service with XE (2013. 12. ~ 2014. 2.)
+* Development of web service module for trading books with XE (2013. 12. ~ 2014. 2.)
 
 * Development of network Omok game with Java GUI (2014. 7.)
 
@@ -106,13 +106,13 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Development of mobile text image immediate translator (2016. 6. ~ 2017. 5.)
 
-* Development of simple Kakaotalk chatbot (2017. 4.)
+* Development of simple Kakaotalk chatbot (2017. 5.)
 
-* Implementation of various GAN models with pyTorch [-Link-][https://github.com/Yangyangii/GAN-Tutorial] (2018. 4.)
+* Implementation of various GAN models with pyTorch [[Link]](https://github.com/Yangyangii/GAN-Tutorial) (2018. 4.)
 
-* Attending 2018 OpenAI Retro Contest :: 119th. T.T (2018. 6.)
+* Attending 2018 OpenAI Retro Contest :: 119th... T.T (2018. 6.)
 
-* Implementation of DQN \& PG variants with pytorch -Link- (2018. 6.)
+* Implementation of DQN & PG variants with pyTorch [Link] (2018. 6.)
 
 * Implementation of a model for prediction of a heaving wave occurrence (POSCO AI Challenge) (2018. 8.)
 
@@ -144,7 +144,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Sports :: Tennis (good), Pingpong (good), Korean Jokgu (Excellent)
 
-* Overwatch :: 75 level; Only Hanjo (haha)
+* Games :: Overwatch(75 level; only Hanjo)
 
 
 [mygithub]: https://github.com/Yangyangii
