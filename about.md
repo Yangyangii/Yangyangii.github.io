@@ -152,7 +152,9 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Sports :: Tennis (good), Pingpong (good), Korean Jokgu (Excellent)
 
-* Games :: Overwatch(75 level; only Hanjo)
+* Games :: Overwatch (75 level; only Hanjo)
+
+* Playing with children (I love kids)
 
 
 [mygithub]: https://github.com/Yangyangii
