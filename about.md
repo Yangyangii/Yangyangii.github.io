@@ -58,7 +58,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 ## Research Experiences
 
-* Emotion-aware music recommenadation with scikit-learn (2016. 1. ~ 2016. 3.)
+* Emotion-aware music recommendation with scikit-learn (2016. 1. ~ 2016. 3.)
 
 * Big-data analysis system for T-commerce with CDH, W-Shopping (2016. 6. ~ 2016. 12.)
 
@@ -74,7 +74,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * HGU Intramural Programming Competition :: 3rd place. Received an award of $300 (2016)
 
-* Posco AI Challenge :: 8th place (Encouragement Prize. Received an award of $500) (2018)
+* Posco AI Challenge :: 8th place, but extra encouragement prize. Received an award of $500 (2018)
 
 <br />
 
