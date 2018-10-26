@@ -116,11 +116,11 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Development of simple Kakaotalk chatbot (2017. 5.)
 
-* Implementation of various GAN models with pyTorch [[Link]](https://github.com/Yangyangii/GAN-Tutorial) (2018. 4.)
+* Implementation of various GAN models with pyTorch [<b>[Link]</b>](https://github.com/Yangyangii/GAN-Tutorial) (2018. 4.)
 
 * Attending 2018 OpenAI Retro Contest :: 119th... OTL.. (2018. 6.)
 
-* Implementation of DQN & PG variants with pyTorch [[Link]](https://github.com/Yangyangii/deep-rl-pytorch) (2018. 6.)
+* Implementation of DQN & PG variants with pyTorch [<b>[Link]</b>](https://github.com/Yangyangii/deep-rl-pytorch) (2018. 6.)
 
 * Implementation of a model for prediction of a heaving wave occurrence (POSCO AI Challenge) (2018. 8.)
 
