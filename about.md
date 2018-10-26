@@ -6,21 +6,145 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
 
-[Jinhyeok Yang][myhome]<br />
-[Github][mygithub]<br />
-Research on Deeplearning & Neural Speech Synthesis<br />
-Interest on GameAI & Reinforcement Learning<br />
+
+
+Research on Deep Generative Model & Neural Speech Synthesis
+
+Interest on GameAI & Reinforcement Learning
+
+Studying Machine Learning Fundamentals
+
+You can see my public codes at [Github][mygithub]
+
+The following summary is my PERSONAL introduction. (NOT official)
+
 <br />
+
+## Dream
+
+* Game AI contents leader; Planning, researching, and managing future AI contents. e.g. control capability of monsters, affinity with NPC, Creating various jobs not manually programming, intelligent NPC subordinate, and etc. (maybe after 10 years?)
+
+<br />
+
+## My Hometown
+
+* Gokseong. Yeah, THE Gokseong you know.
+
+<br />
+
+## Education
+
+* B.S. in CS. Handong Global University (2011. 2. ~ 2018. 2.)
+
+* M.S. in AI. Handong Global University (2018. 2. ~ Present)
+
+<br />
+
 ## Publications
-...
+
+* Yang J., Chae W., Kim S., Choi H. Emotion-Aware Music Recommendation. In: Marcus A. (eds) Design, User Experience, and Usability: Novel User Experiences. DUXU. Toronto, Canada, Jul 2016.
+
+* 양진혁, 곽효빈, 김인중. "딥러닝을 이용한 대규모 한글 폰트 인식" 한국어정보학회 2017년도 제29회 한글및한국어정보처리학술대회, 8-12, 2017년 10월 
+
+* Yang J., Kwak H., Kim I. TBA, submitted, 2018
 
 <br />
-## Research
-...
+
+## Work Experiences
+
+* Research Intern, Skelter Labs (2018. 6. ~ 2018. 8.)
 
 <br />
-## Projects
-...
+
+## Research Experiences
+
+* Emotion-aware music recommenadation (2016. 1. ~ 2016. 3.)
+
+* Big-data analysis system for T-commerce (2016. 6. ~ 2016. 12.)
+
+* Multi task learning using CNN for large-scale Hangul character and font recognition (2017. 4. ~ 2017. 10.)
+
+* Neural speech synthesis with external information (2018. 1. ~ Present)
+
+<br />
+
+## Award
+
+* Bronze medal, National Robotics Science Competition (2007)
+
+* HGU Intramural Programming Competition :: 3rd place. Received an award of $300 (2016)
+
+* Posco AI Challenge :: 8th place (Encouragement Prize. Received an award of $500) (2018)
+
+<br />
+
+## Scholarships
+
+* National Science and Technology Scholarship, Korean Student Aid Foundation (2011. ~ 2017.)
+
+<br />
+
+## Personal Projects
+
+* Development single RPG game with RPG maker 2003 tool (2005)
+
+* Hacking a console classical games and data manipulation using T-search and UltraEdit. Serious? It is not a project. just..... hmm.. (2006)
+
+* Building RPG Game server with entire file set already created (2007)
+
+* Development of web service with XE (2013. 12. ~ 2014. 2.)
+
+* Development of network Omok game with Java GUI (2014. 7.)
+
+* Maintenance of students' intranet of HGU (2014. 6. ~ 2014. 12.)
+
+* SEAL, development of lecture assessment web service of HGU with Django (2014. 12. ~ 2016. 2.)
+
+* Development of 3D flight shooting game with Unity 5 (2015. 9. ~ 2015. 12.)
+
+* Development of music recommendation algorithm based on weather (2015. 10. ~ 2015. 12.)
+
+* Development of mobile text image immediate translator (2016. 6. ~ 2017. 5.)
+
+* Development of simple Kakaotalk chatbot (2017. 4.)
+
+* Implementation of various GAN models with pyTorch [-Link-][https://github.com/Yangyangii/GAN-Tutorial] (2018. 4.)
+
+* Attending 2018 OpenAI Retro Contest :: 119th. T.T (2018. 6.)
+
+* Implementation of DQN \& PG variants with pytorch -Link- (2018. 6.)
+
+* Implementation of a model for prediction of a heaving wave occurrence (POSCO AI Challenge) (2018. 8.)
+
+* Attending BattleGrounds Kaggle Challenge (Present)
+
+<br />
+
+## Extra-curricular Activities
+
+* Volunteer for Freshman at HGU (2014)
+
+* The president of CRA (Computer Research Association club) (2014. 12. ~ 2015. 12.)
+
+* Leadership for school team (2016. 3. ~ 2016. 6.)
+
+* The president of DRA (Data Revolution Association), which is association of bigdata analysis (2017. 1. ~ 2017. 7.)
+
+* The president of HAILO (Handong Artificial Intelligence Leading Organization), which is AI association (2017. 9. ~ 2018. 2.)
+
+<br />
+
+## Hobbies
+
+* Whatcha :: 800+ movies, 190+ dramas
+
+* Addicted to fantasy novels :: maybe... 2000+ books
+
+* Variants of novel "Three Kingdoms" :: 15+ read counts
+
+* Sports :: Tennis (good), Pingpong (good), Korean Jokgu (Excellent)
+
+* Overwatch :: 75 level; Only Hanjo (haha)
 
 
 [mygithub]: https://github.com/Yangyangii

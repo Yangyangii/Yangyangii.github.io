@@ -16,10 +16,7 @@ cover:  "/assets/instacode.png"
 
 ## Model Architecture: Text2Mel & SSRN
 
-DCTTS는 텍스트를 멜 스펙트로그램(mel-spectrogram)으로 변환하는 네트워크(Text2Mel)와 스펙트로그램 변환 네트워크(SSRN, Spectrogram Super-resolution Network)로 구성된다. Text2Mel은 텍스트에서 변환된 문자 임베딩 시퀀스를 입력받아 음성의 멜 스펙트로그램을 출력한다. Text2Mel은 텍스트 인코더(Text encoder), 음성 인코더(Audio Encoder), 주목모델(Attention), 음성 디코더(Audio Decoder) 4개의 하부네트워크로 구성된다.
-
-
-SSRN은 멜 스펙트로그램을 입력 받아 이를 선형 스펙트로그램(linear spectrogram)으로 변환한다. SSRN을 학습하기 위해서는 Text2Mel이 출력한 멜 스펙트로그램이 요구되지만, 기준값(ground-truth) 멜 스펙트로그램을 이용할 경우 Text2Mel과 동시에 병렬적으로 학습할 수 있다. SSRN은 보코더(vocoder)로 사용되는 Griffin-Lim 알고리즘의 입력이 선형 스펙트로그램이어야 하기 때문에 필요하다. 만약 WaveNet과 같은 모델을 보코더로 사용하면 멜 스펙트로그램을 입력으로 요구하기 때문에 SSRN을 사용하지 않아도 된다.
+DCTTS는 텍스트를 멜 스펙트로그램(mel spectrogram)으로 변환하는 네트워크(Text2Mel)와 스펙트로그램 변환 네트워크(SSRN, Spectrogram Super-resolution Network)로 구성된다. Text2Mel은 텍스트에서 변환된 문자 임베딩 시퀀스를 입력받아 음성의 멜 스펙트로그램을 출력한다. Text2Mel은 텍스트 인코더(Text encoder), 음성 인코더(Audio Encoder), 주목모델(Attention), 음성 디코더(Audio Decoder) 4개의 하부네트워크로 구성된다. 텍스트 인코더는 1차원 비인과 컨볼루션 (1D non-causal convolution)을 사용하고, 음성 인코더와 음성 디코더는 미래의 정보를 사용하지 않기 위해 1차원 인과 컨볼루션 (1D causal convolution)을 사용한다. SSRN은 멜 스펙트로그램을 입력 받아 이를 선형 스펙트로그램(linear spectrogram)으로 변환한다. SSRN은 단일 네트워크이며 멜 스펙트로그램에서 선형 스펙트로그램의 차원으로 업샘플링하기 위한 컨볼루션으로 구성된다. SSRN을 학습하기 위해서는 Text2Mel이 출력한 멜 스펙트로그램이 요구되지만, 기준값(ground-truth) 멜 스펙트로그램을 이용할 경우 Text2Mel과 동시에 병렬적으로 학습할 수 있다.
 
 ![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/dctts-network-architecture.JPG  "network-architecture")
 
@@ -35,6 +32,9 @@ $$ W_{nt} = 1 - \exp\{-(n/N - t/T)^2/2g^2\} $$
 
 DCTTS의 성능을 평가하기 위해 실험을 통해 Tacotron과 성능을 비교했다. 실험에는 한 명의 화자에 대한 음성 데이터인 LJ 데이터가 사용되었다. Tacotron의 MOS는 2.07로 측정된 반면 DCTTS의 MOS는 2.71로 측정되어 DCTTS의 MOS가 0.64만큼 우수하였다. 또한, Tacotron의 학습에 12일이 소요된 반면 DCTTS는 불과 15시간만에 학습이 완료되어 학습 속도가 12배 이상 개선되었다.
 
+## Opinion
+
+CNN으로 바꾸면서 학습 속도가 월등히 빨라진 것은 정말 바람직한 결과다. 구글과 같은 기업이 아닌 이상에야 우리 같은 소시민은 RNN 기반의 모델을 여러 아이디어를 실험해보기에는 어려움이 많다..ㅠㅠ 또한, 음성합성 모델에서 Key, Value, Query를 통해 구성되는 Attention에서 각 Encoder의 아웃풋이 어떤 의미를 갖는지 고민해보는 등 생각해 볼 부분도 많아 좋은 것 같다.
 
 ## References
 +	[1] <em>[Wang, Yuxuan, et al. "Tacotron: A fully end-to-end text-to-speech synthesis model." arXiv preprint (2017).](https://arxiv.org/abs/1703.10135)</em>
