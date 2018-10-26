@@ -100,11 +100,21 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * SEAL, development of lecture assessment web service of HGU with Django (2014. 12. ~ 2016. 2.)
 
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/seal.jpg "seal")
+
 * Development of 3D flight shooting game with Unity 5 (2015. 9. ~ 2015. 12.)
+
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/shooting.jpg "shooting-game")
 
 * Development of music recommendation algorithm based on weather (2015. 10. ~ 2015. 12.)
 
 * Development of mobile text image immediate translator (2016. 6. ~ 2017. 5.)
+
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator1-1.jpg "translator1")
+
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator1-2.jpg "translator2")
+
+![Screenshot](https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_about/translator2.jpg "translator3")
 
 * Development of simple Kakaotalk chatbot (2017. 5.)
 
