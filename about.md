@@ -94,7 +94,9 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Development of web service module for trading books with XE (2013. 12. ~ 2014. 2.)
 
-* Development of network Omok game with Java GUI (2014. 7.)
+* Development of network Omok game with Java GUI (2014. 6.)
+
+* Development of flipping egg fry game mobile application (2014. 7.)
 
 * Maintenance of students' intranet of HGU (2014. 6. ~ 2014. 12.)
 
@@ -146,7 +148,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Whatcha :: 800+ movies, 190+ dramas
 
-* Addicted to fantasy novels :: maybe... 2000+ books
+* Novels (especially fantasy) :: a lot of books
 
 * Variants of novel "Three Kingdoms" :: 15+ read counts
 
