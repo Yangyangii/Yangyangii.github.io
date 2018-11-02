@@ -96,7 +96,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Development of network Omok game with Java GUI (2014. 6.)
 
-* Development of flipping egg fry game mobile application (2014. 7.)
+* Development of flipping egg fry game mobile application, downloaded 2000+ (2014. 7.)
 
 * Maintenance of students' intranet of HGU (2014. 6. ~ 2014. 12.)
 
@@ -148,13 +148,13 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Whatcha :: 800+ movies, 190+ dramas
 
-* Novels (especially fantasy) :: a lot of books
+* Novels (especially fantasy) :: 2000+ books
 
 * Variants of novel "Three Kingdoms" :: 15+ read counts
 
 * Sports :: Tennis (good), Pingpong (good), Korean Jokgu (Excellent)
 
-* Games :: Overwatch (75 level; only Hanjo)
+* Games :: Overwatch (75 level; only Hanjo), Romance of the Three Kingdoms III ~ XI (Koei, series 10 is my favorite)
 
 * Playing with children (I love kids)
 
