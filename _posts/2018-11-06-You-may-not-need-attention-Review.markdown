@@ -20,17 +20,17 @@ cover:  "/assets/instacode.png"
 
 ![Screenshot](/assets/_posts/you-may-not-need-attention-1.JPG | width=100)
 
-<img src="/assets/_posts/you-may-not-need-attention-1.JPG" width="200" height="100">
+<img src="https://user-images.githubusercontent.com/6456004/48075554-d8478300-e226-11e8-9b59-8e913b9a7bcc.JPG" width="400">
 
 ## Experimental Result
 
 실험은 WMT 2014, newstest2013으로 학습하고 newstest2014로 테스트했다. reference model로는 [2]의 구현인 OpenNMT를 사용했다. 개인적으로 BLEU Score가 어떻게 나왔나보다는 Table 1이 더 흥미롭다. Table 1은 각 task별로 $$ \varepsilon $$이 얼마나 들어갔는지를 나타낸다. 각 언어의 문법으로 인해 달라지는 문장 구조를 나타낸다고 볼 수도 있는데, 한국어는 얼마나 나올지 궁금하다.
 
-<img src="/assets/_posts/you-may-not-need-attention-2.JPG" width="200" height="100">
+<img src="https://user-images.githubusercontent.com/6456004/48075555-d8478300-e226-11e8-8933-9e0353756e39.JPG" width="400">
 
 Table 3는 Reference model과의 BLEU score 비교이다. 전체적으로 sentence length가 길수록 더 좋은 성능을 보인다는 것을 어필한다. 아무래도 attention이 만능은 아니다보니 alignment를 supervised learning을 통해 학습한 것 보다는 약한 것 같다. 하지만 이 부분은 길이가 긴 데이터가 더 있다면 이마저도 reference model이 더 좋을것 같다. 특히 큰 비중을 차지하는 word-level의 길이가 20이하인 sentence에 대해 성능이 많이 차이나는데, 치명적인 단점으로 작용하지 않을까 싶다. 대부분 우리는 문장을 짧게 쓰지 않나...?
 
-<img src="/assets/_posts/you-may-not-need-attention-3.JPG" width="200" height="100">
+<img src="https://user-images.githubusercontent.com/6456004/48075556-d8478300-e226-11e8-8249-26fafa54b9fd.JPG" width="400">
 
 ## Conclusion
 
