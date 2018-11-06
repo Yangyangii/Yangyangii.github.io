@@ -18,19 +18,17 @@ cover:  "/assets/instacode.png"
 
 제안하는 모델의 구조는 매우 간단하다. 우리가 익히 알고 있는 RNN 모델이다. 논문에서는 <b>eager translation model</b>이라고 표현한다. 하지만 기본적인 RNN 모델로는 순서가 뒤바뀌거나 long term dependency에 대해 잘 학습하기가 어렵다. 따라서, Data preprocessing을 해주는데, alignment를 수작업으로 해준듯 하다. 즉, source sentence의 단어들이 각각 target sentence의 어떤 단어에 해당하는지에 대한 정보가 paired 되어 있다. 그리고 auto-regressive model의 특성으로 causal한 단어 매칭을 위해 padding token으로 $$ \varepsilon $$을 사용한다. target sentence의 단어의 time이 source sentence의 단어의 time보다 먼저나오는 경우 $$ \varepsilon $$을 추가하여 한칸씩 밀어낸다. 따라서, input length와 output length가 같다.
 
-![Screenshot](/assets/_posts/you-may-not-need-attention-1.JPG | width=100)
-
-<img src="https://user-images.githubusercontent.com/6456004/48075554-d8478300-e226-11e8-9b59-8e913b9a7bcc.JPG" width="400">
+<img src="https://user-images.githubusercontent.com/6456004/48075554-d8478300-e226-11e8-9b59-8e913b9a7bcc.JPG" width="300">
 
 ## Experimental Result
 
 실험은 WMT 2014, newstest2013으로 학습하고 newstest2014로 테스트했다. reference model로는 [2]의 구현인 OpenNMT를 사용했다. 개인적으로 BLEU Score가 어떻게 나왔나보다는 Table 1이 더 흥미롭다. Table 1은 각 task별로 $$ \varepsilon $$이 얼마나 들어갔는지를 나타낸다. 각 언어의 문법으로 인해 달라지는 문장 구조를 나타낸다고 볼 수도 있는데, 한국어는 얼마나 나올지 궁금하다.
 
-<img src="https://user-images.githubusercontent.com/6456004/48075555-d8478300-e226-11e8-8933-9e0353756e39.JPG" width="400">
+<img src="https://user-images.githubusercontent.com/6456004/48075555-d8478300-e226-11e8-8933-9e0353756e39.JPG" width="200">
 
 Table 3는 Reference model과의 BLEU score 비교이다. 전체적으로 sentence length가 길수록 더 좋은 성능을 보인다는 것을 어필한다. 아무래도 attention이 만능은 아니다보니 alignment를 supervised learning을 통해 학습한 것 보다는 약한 것 같다. 하지만 이 부분은 길이가 긴 데이터가 더 있다면 이마저도 reference model이 더 좋을것 같다. 특히 큰 비중을 차지하는 word-level의 길이가 20이하인 sentence에 대해 성능이 많이 차이나는데, 치명적인 단점으로 작용하지 않을까 싶다. 대부분 우리는 문장을 짧게 쓰지 않나...?
 
-<img src="https://user-images.githubusercontent.com/6456004/48075556-d8478300-e226-11e8-8249-26fafa54b9fd.JPG" width="400">
+<img src="https://user-images.githubusercontent.com/6456004/48075556-d8478300-e226-11e8-8249-26fafa54b9fd.JPG" width="200">
 
 ## Conclusion
 
