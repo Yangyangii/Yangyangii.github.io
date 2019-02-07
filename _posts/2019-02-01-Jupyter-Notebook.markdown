@@ -7,66 +7,36 @@ article_header:
     src: "/assets/instacode.png"
 ---
 
-# Jupyter notebook 원격 서버 사용법
-## 목적
-- 랩실에 들어온 친구들이 자꾸 물어본다. 4학년도 물어본다. 3학년도 물어본다. 몇년째 반복중ㅋㅋㅋㅋㅋ. 이걸 보도록 하자.
 
-## 설치
+# You May Not Need Attention [Press, O., et al. / 2018]
 
-- Anaconda 3.7 (3.6 downgrade 권장)
-    - 최근에는 tensorflow gpu 나 pytorch gpu 를 conda 를 통해 설치하면, cudnn 과 같은 별개의 작업을 필요로 하지 않는다. 그러므로 docker 를 이용하거나 커스터마이징이 필요한 build 에 자신 있는 고수가 아니라면 그냥 아나콘다를 사용하기를 권장한다. 웬만해서는 최적화가 더 잘 되어있다.
+## Introduction
 
-    - 글의 주 목적인 Jupyter notebook 라이브러리는 Anaconda 설치 시에 포함되어 있다. 최신버젼이 필요한 것이 아니면 따로 설치하지 말자.
+최근에 좋은 성능을 내고 있는 대부분의 NMT 모델들은 attention을 encoder-decoder 모델이다. 이 논문의 저자들은 attention 없이도 충분한 성능을 낼 수 있다고 주장한다. 여기서 attention이 없어도 된다는 것은 attention mechanism [2]이 없어도 된다는 것이지, alignment가 필요없다는 이야기가 아니다.
 
-    - Anaconda 설치와 환경변수 설정 등은 알아서 하자. 설치할 때 root를 건들지 말자.(물론 sudo 권한이 없을 확률이 높을 것이다) user로 깔도록 하자.
+## Model Architecture: RNN
 
-## 원격 서버
+제안하는 모델의 구조는 매우 간단하다. 우리가 익히 알고 있는 RNN 모델이다. 논문에서는 <b>eager translation model</b>이라고 표현한다. 하지만 기본적인 RNN 모델로는 순서가 뒤바뀌거나 long term dependency에 대해 잘 학습하기가 어렵다. 따라서, Data preprocessing을 해주는데, alignment를 수작업으로 해준듯 하다. 즉, source sentence의 단어들이 각각 target sentence의 어떤 단어에 해당하는지에 대한 정보가 paired 되어 있다. 그리고 auto-regressive model의 특성으로 causal한 단어 매칭을 위해 padding token으로 $$ \varepsilon $$을 사용한다. target sentence의 단어의 time이 source sentence의 단어의 time보다 먼저나오는 경우 $$ \varepsilon $$을 추가하여 한칸씩 밀어낸다. 따라서, input length와 output length가 같다.
 
-- 강력한 GPU를 가진 서버에서 딥러닝 학습을 하고 싶은데, 아직 관련 프로그래밍이 익숙하지 않아 GUI도 지원하고 interactive coding이 가능한 Jupyter notebook을 쓰고 싶다.
+![Screenshot](/assets/_posts/you-may-not-need-attention-1.JPG | width=100)
 
-- jupyter notebook 의 초기 설정을 해줄 필요가 있다. 먼저 비밀번호를 사용하기위해 미리 파이썬에서 암호를 생성하고 생성된 sha1 뭐시기를 복사한다.
+<img src="https://user-images.githubusercontent.com/6456004/48075554-d8478300-e226-11e8-9b59-8e913b9a7bcc.JPG" width="400">
 
-{% highlight ruby %}
-from notebook.auth import passwd
-passwd()
-Enter password: ....
-Verify password: ....
-'sha1:...............'
-{% endhighlight %}
+## Experimental Result
 
-- user home 으로 가서 다음과 같은 명령어를 입력한다.
+실험은 WMT 2014, newstest2013으로 학습하고 newstest2014로 테스트했다. reference model로는 [2]의 구현인 OpenNMT를 사용했다. 개인적으로 BLEU Score가 어떻게 나왔나보다는 Table 1이 더 흥미롭다. Table 1은 각 task별로 $$ \varepsilon $$이 얼마나 들어갔는지를 나타낸다. 각 언어의 문법으로 인해 달라지는 문장 구조를 나타낸다고 볼 수도 있는데, 한국어는 얼마나 나올지 궁금하다.
 
-{% highlight ruby %}
-user@server:~$ jupyter notebook --generate-config
-user@server:~$ vi .jupyter/jupyter_notebook_config.py
-{% endhighlight %}
+<img src="https://user-images.githubusercontent.com/6456004/48075555-d8478300-e226-11e8-8933-9e0353756e39.JPG" width="400">
 
-- 파일을 열었으면, 다음 키워드들을 찾아서 주석해제 후에 수정해준다. 암호는 아까 복사한거 붙여넣기.
+Table 3는 Reference model과의 BLEU score 비교이다. 전체적으로 sentence length가 길수록 더 좋은 성능을 보인다는 것을 어필한다. 아무래도 attention이 만능은 아니다보니 alignment를 supervised learning을 통해 학습한 것 보다는 약한 것 같다. 하지만 이 부분은 길이가 긴 데이터가 더 있다면 이마저도 reference model이 더 좋을것 같다. 특히 큰 비중을 차지하는 word-level의 길이가 20이하인 sentence에 대해 성능이 많이 차이나는데, 치명적인 단점으로 작용하지 않을까 싶다. 대부분 우리는 문장을 짧게 쓰지 않나...?
 
-- port는 기본으로 8888을 사용하는데, 서버는 보통 여러명이서 같이 사용하니 중복되지 않도록 그냥 나만의 포트를 설정하자. 하다 못해 netstat 으로 열려있는 포트라도 확인하고 작업하자.
+<img src="https://user-images.githubusercontent.com/6456004/48075556-d8478300-e226-11e8-8249-26fafa54b9fd.JPG" width="400">
 
-- ip는 저대로 쓰지 말고 서버 ip를 쓰면 된다.
+## Conclusion
 
-{% highlight ruby %}
-c = get_config()
-c.NotebookApp.open_browser = False
-c.NotebookApp.password = u'sha1:...'
-c.NotebookApp.ip = '192.168.0.1'
-c.NotebookApp.port = 12345
-{% endhighlight %}
+결론은 어텐션 없는 간단한 번역 모델로 [2]의 어텐션 있는 모델만큼 성능이 나왔다는 것이다. 이 논문의 모델과 방법이 좋다는 생각은 딱히 들지 않고, 어텐션이 갖고 있는 의미가 무엇인가에 대해 다시 생각해 볼 여지를 주는 것 같다. 만약 한국어와 영어의 번역도 실험결과로 보여줬다면 뭔가 더 생각할만한 것이 있지 않았을까라는 아쉬움 가득한 논문이다.
 
-- 저장하고 나온 후에, user home에서 다음과 같이 입력하자.
 
-{% highlight %}
-user@server:~$ screen -S jupy
-user@server:~$ jupyter notebook
-{% endhighlight %}
-
-- Ctrl + a + d 를 클릭한 후 screen session 에서 빠져나온다.
-
-- 자세한 screen 사용법은 구글링을 하도록 하자.
-
-- 이제 원격 서버에 접속 가능한 내부망에서 브라우저를 열고 ip:port 를 입력하면 된다.
-
-## 끝
-- 끝
+## References
++	[1] <em>[Ofir, Press, et al. "You May Not Need Attention."](https://arxiv.org/abs/1810.13409)</em>
++	[2] <em>[Bahdanau, Dzmitry, Kyunghyun Cho, and Yoshua Bengio. "Neural machine translation by jointly learning to align and translate." arXiv preprint arXiv:1409.0473 (2014).](https://arxiv.org/abs/1409.0473)</em>
