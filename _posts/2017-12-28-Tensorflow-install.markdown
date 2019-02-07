@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "윈도우즈에서 TensorFlow 설치"
-date:   2017-12-28 15:18:23 +0700
-author: Jin
-categories: TensorFlow
 tags:	TensorFlow Python Anaconda
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 ## 설치 목록

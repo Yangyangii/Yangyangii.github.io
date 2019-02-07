@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Data Analysis in R(1)"
-date:   2017-01-03 17:18:23 +0700
-author: Jin
-categories: R
 tags:	R Statistics Datamining
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 

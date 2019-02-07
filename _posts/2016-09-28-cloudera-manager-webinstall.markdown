@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Ubuntu 14.04LTS에서 클라우데라 구축하기(2)"
-date:   2016-09-28 15:18:23 +0700
-author: Jin
-categories: Spark
 tags:	Spark Cloudera
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 이전 글에서는 Ubuntu14.04LTS 환경에서 Cloudera Manager Server 설치와 여러가지 환경설정을 보았다. 이번 글에서는 설치된 Server에 접속하여 Web UI에서 클러스터를 구축하는 법을 보도록 한다.

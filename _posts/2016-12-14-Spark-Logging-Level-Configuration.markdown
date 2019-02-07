@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Spark Logging Level Configuration"
-date:   2016-12-14 15:18:23 +0700
-author: Jin
-categories: Spark
 tags:	Spark Cloudera
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 

@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Pixel CNN & WaveNet Review"
-date:   2017-12-30 19:00:00 +0700
-author: Jin
-categories: Speech_Synthesis
 tags:	TTS Speech_Synthesis GenerativeModel
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 +	레퍼런스의 Pixel CNN과 WaveNet에 대한 리뷰를 번역하고 약간 수정한 글임.

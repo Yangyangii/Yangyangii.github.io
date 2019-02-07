@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Statistics Summary with R(7) - PCA"
-date:   2017-01-05 17:18:23 +0700
-author: Jin
-categories: R
 tags:	R Statistics
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 

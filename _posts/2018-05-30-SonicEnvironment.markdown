@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "openai gym-retro 환경 구축(with Sonic)"
-date:   2018-05-30 19:00:00 +0700
-author: Jin
-categories: Reinforcement_Learning
 tags:	Reinforcement_Learning Sonic gym-retro
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 ## Basic env.

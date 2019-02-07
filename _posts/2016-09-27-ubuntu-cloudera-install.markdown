@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Ubuntu 14.04LTS에서 클라우데라 구축하기(1)"
-date:   2016-09-27 15:18:23 +0700
-author: Jin
-categories: Spark
 tags:	Spark Cloudera
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 클라우데라와 관련해서는 정보가 많이 없다.

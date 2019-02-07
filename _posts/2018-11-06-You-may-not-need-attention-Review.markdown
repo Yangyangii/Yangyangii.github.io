@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "You May Not Need Attention (Review)"
-date:   2018-11-06 23:50:00 +0900
-author: Yangyangii
-categories: NLP
 tags:	NLP
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 # You May Not Need Attention [Press, O., et al. / 2018]

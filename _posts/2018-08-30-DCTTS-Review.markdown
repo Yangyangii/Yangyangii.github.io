@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Paper Review (DCTTS)"
-date:   2018-08-30 15:00:00 +0900
-author: Yangyangii
-categories: Speech_Synthesis
 tags:	Speech_Synthesis
-cover:  "/assets/instacode.png"
+article_header:
+  type: cover
+  image:
+    src: "/assets/instacode.png"
 ---
 
 # Efficiently Trainable Text-To-Speech System Based On Deep Convolutional Networks with Guided Attention [Tachibana, H. et al. / 2017]
