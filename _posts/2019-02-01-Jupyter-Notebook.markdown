@@ -32,10 +32,10 @@ Verify password: ....
 
 - user home 으로 가서 다음과 같은 명령어를 입력한다.
 
-{% highlight ruby %}
+~~~ ruby
 user@server:~$ jupyter notebook --generate-config
 user@server:~$ vi .jupyter/jupyter_notebook_config.py
-{% endhighlight %}
+~~~
 
 + 파일을 열었으면, 다음 키워드들을 찾아서 주석해제 후에 수정해준다. 암호는 아까 복사한거 붙여넣기.
 
@@ -53,10 +53,10 @@ c.NotebookApp.port = 12345
 
 + 저장하고 나온 후에, user home에서 다음과 같이 입력하자.
 
-{% highlight ruby %}
+~~~ ruby
 user@server:~$ screen -S jupy
 user@server:~$ jupyter notebook
-{% endhighlight %}
+~~~
 
 + Ctrl + a + d 를 클릭한 후 screen session 에서 빠져나온다.
 
@@ -64,3 +64,4 @@ user@server:~$ jupyter notebook
 
 + 이제 원격 서버에 접속 가능한 내부망에서 브라우저를 열고 ip:port 를 입력하면 된다.
 
++ 끝
