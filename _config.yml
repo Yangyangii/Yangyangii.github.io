@@ -48,8 +48,8 @@ author:
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : github.com/yangyangii # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : jinhyeok-yang-791336103 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : yangyangii # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -122,7 +122,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: yangyangii-github-io # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
@@ -171,7 +171,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : "UA-83878761-1" # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 

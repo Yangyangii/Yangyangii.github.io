@@ -87,7 +87,7 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * HGU Intramural Programming Competition :: 3rd place. (2016)
 
-* Posco AI Challenge :: 8th place, but extra encouragement prize. (2018)
+* Posco AI Challenge :: Extra encouragement prize. (2018)
 
 <br />
 
