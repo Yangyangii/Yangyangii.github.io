@@ -1,4 +1,5 @@
 ---
+layout: article
 title:  "Jupyter Notebook 원격 서버 사용법 (ubuntu)"
 tags:	Linux jupyter
 article_header:
@@ -7,7 +8,6 @@ article_header:
     src: "/assets/instacode.png"
 ---
 
-# Jupyter notebook 원격 서버 사용법
 ## 목적
 + 랩실에 들어온 친구들이 자꾸 물어본다. 4학년도 물어본다. 3학년도 물어본다. 몇년째 반복중ㅋㅋㅋㅋㅋ. 이걸 보도록 하자.
 
