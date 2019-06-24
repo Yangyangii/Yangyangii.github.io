@@ -20,7 +20,7 @@ Noisy - 1
 
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/noisy-1.wav" controls> Unable to load song. </audio>
 
-"as the most famous singer-songwriter jay chou gave a perfect performance in beijing on may <b>twenty fourth twenty fifth and twenty sixth twenty three all the fans thought highly of him and took pride in him all the tickets were sold out.</b>"
+"as the most famous singer-songwriter jay chou gave a perfect performance in beijing on may <b>twenty fourth twenty fifth and twenty sixth twenty three all the fans thought highly of him and took pride in him all the tickets</b> were sold out."
 
 Origin - 2
 
