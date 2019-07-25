@@ -57,11 +57,11 @@ The following summary is my PERSONAL introduction. (NOT official)
 ### Conference
 * <u>J. Yang</u>, W. Chae, S. Kim, H. Choi, "Emotion-Aware Music Recommendation," HCII, 2016.
 
-* <u>양진혁</u>, 곽효빈, 김인중. "딥러닝을 이용한 대규모 한글 폰트 인식," HCLT, 2017
+* <u>양진혁</u>, 곽효빈, 김인중. "딥러닝을 이용한 대규모 한글 폰트 인식," HCLT, 2017.
 
-* 최진, <u>양진혁</u>, 김인중. "적대적 생성 신경망을 이용한 딥러닝 기반 TTS 음질 개선," KCC, 2019
+* 최진, <u>양진혁</u>, 김인중. "적대적 생성 신경망을 이용한 딥러닝 기반 TTS 음질 개선," KCC, 2019.
 
-* <u>양진혁</u>, 김인중. "노이즈 어텐션을 통한 딥러닝 기반 음성 합성," KCC, 2019
+* <u>양진혁</u>, 김인중. "노이즈 어텐션을 통한 딥러닝 기반 음성 합성," KCC, 2019.
 
 ### Journal
 * <u>J. Yang</u>, H. Kim, H. Kwak and I. Kim, TBA, 2019
@@ -71,6 +71,8 @@ The following summary is my PERSONAL introduction. (NOT official)
 ## Work Experiences
 
 * <b>Research Intern, Skelter Labs.</b> Implementation of Korean multi-speaker speech synthesis system with TensorFlow (2018. 6. ~ 2018. 8.)
+
+* <b>AI Researcher, NCSOFT Speech Lab.</b> (2019. 7. ~ Present)
 
 <br />
 
