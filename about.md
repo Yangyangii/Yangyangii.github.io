@@ -29,7 +29,7 @@ Studying Machine Learning Fundamentals
 
 You can see my public codes at [Github][mygithub]
 
-The following summary is my PERSONAL introduction. (NOT official)
+The following summary is my PERSONAL introduction. (NOT official CV)
 
 <br />
 
@@ -57,14 +57,14 @@ The following summary is my PERSONAL introduction. (NOT official)
 ### Conference
 * <u>J. Yang</u>, W. Chae, S. Kim, H. Choi, "Emotion-Aware Music Recommendation," HCII, 2016.
 
-* <u>양진혁</u>, 곽효빈, 김인중. "딥러닝을 이용한 대규모 한글 폰트 인식," HCLT, 2017.
+* <u>양진혁</u>, 곽효빈, 김인중, "딥러닝을 이용한 대규모 한글 폰트 인식," HCLT, 2017.
 
-* 최진, <u>양진혁</u>, 김인중. "적대적 생성 신경망을 이용한 딥러닝 기반 TTS 음질 개선," KCC, 2019.
+* 최진, <u>양진혁</u>, 김인중, "적대적 생성 신경망을 이용한 딥러닝 기반 TTS 음질 개선," KCC, 2019.
 
-* <u>양진혁</u>, 김인중. "노이즈 어텐션을 통한 딥러닝 기반 음성 합성," KCC, 2019.
+* <u>양진혁</u>, 김인중, "노이즈 어텐션을 통한 딥러닝 기반 음성 합성," KCC, 2019.
 
 ### Journal
-* <u>J. Yang</u>, H. Kim, H. Kwak and I. Kim, TBA, 2019
+* <u>J. Yang</u>, H. Kim, H. Kwak and I. Kim, "HanFont: large-scale adaptive Hangul font recognizer using CNN and font clustering," IJDAR, 2019.
 
 <br />
 
@@ -93,8 +93,6 @@ The following summary is my PERSONAL introduction. (NOT official)
 ## Awards
 
 * Bronze medal, National Robotics Science Competition (2007)
-
-* HGU Intramural Programming Competition :: 3rd place. (2016)
 
 * Posco AI Challenge :: Extra encouragement prize. (2018)
 
@@ -156,6 +154,8 @@ The following summary is my PERSONAL introduction. (NOT official)
 
 * Implementation Curiosity-Driven Exploration with pytorch [<b>[Github]</b>](https://github.com/Yangyangii/Curiosity-Driven-A2C) (2019. 3.)
 
+* Implementation Domain Adversarial Neural Network with pytorch [<b>[Github]</b>](https://github.com/Yangyangii/DANN-pytorch) (2019. 6.)
+
 
 <br />
 
@@ -168,6 +168,8 @@ The following summary is my PERSONAL introduction. (NOT official)
 * The president of DRA (Data Revolution Association), which is association of bigdata analysis (2017. 1. ~ 2017. 7.)
 
 * The president of HAILO (Handong Artificial Intelligence Leading Organization), which is AI association (2017. 9. ~ 2018. 2.)
+
+* Deepest, AI Association club in SNU (2019. 7. ~ Present)
 
 <br />
 
