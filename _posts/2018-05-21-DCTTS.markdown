@@ -3,8 +3,6 @@ title:  "DCTTS를 이용한 손석희 앵커 목소리 흉내내기"
 tags:	TTS Speech_Synthesis GenerativeModel DCTTS 손석희
 article_header:
   type: cover
-  image:
-    src: "/assets/instacode.png"
 ---
 
 ## DCTTS
