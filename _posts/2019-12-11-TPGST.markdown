@@ -19,8 +19,10 @@ Sample 1
 
 Sample 2
 "여러분 모두 인공지능을 하면 저처럼 행복해져요"
+
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/tpgst/2.wav" controls> Unable to load song. </audio>
 
 Sample 3
+"컴공과가 이시간에 자고 있을 수는 없어요."
 
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/tpgst/3.wav" controls> Unable to load song. </audio>
