@@ -1,0 +1,56 @@
+---
+title:  "F0-DCTTS"
+tags:	TTS GenerativeModel
+article_header:
+  type: cover
+---
+
+## F0-DCTTS implementation
+- Dataset: KSS dataset
+- Paper: None
+- Code: [Github](https://github.com/Yangyangii/F0-DCTTS)
+
+## Samples
+
+### Sample 1
+Text: "얼른 기운 차리셔야죠."
+
+Reference
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
+using normalized F0
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-0.wav" controls> Unable to load song. </audio>
+using normalized F0 + 0.3
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-00.wav" controls> Unable to load song. </audio>
+
+The text in ground truth is slightly different.
+
+### Sample 2
+Text: "애는 걱정하지 마세요."
+
+Reference
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </
+using normalized F0
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-1.wav" controls> Unable to load song. </audio>
+using normalized F0 + 0.3
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-01.wav" controls> Unable to load song. </audio>
+
+### Sample 3
+Text: "아빠가 결혼기념일을 기억하지 않아?"
+
+Reference
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
+using normalized F0
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-2.wav" controls> Unable to load song. </audio>
+using normalized F0 + 0.3
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-02.wav" controls> Unable to load song. </audio>
+
+
+### Sample 4
+Text: "곰 한마리가 사무실 건물 위로 날고 있어요."
+
+Reference
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
+using normalized F0
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-3.wav" controls> Unable to load song. </audio>
+using normalized F0 + 0.3
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-03.wav" controls> Unable to load song. </audio>
