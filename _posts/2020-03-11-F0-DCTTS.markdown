@@ -22,13 +22,13 @@ using normalized F0
 using normalized F0 + 0.3
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-00.wav" controls> Unable to load song. </audio>
 
-The text in ground truth is slightly different.
 
 ### Sample 2
 Text: "애는 걱정하지 마세요."
+*The text in ground truth is slightly different.
 
 Reference
-<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </
+<audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
 using normalized F0
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/sample-1.wav" controls> Unable to load song. </audio>
 using normalized F0 + 0.3
@@ -36,6 +36,7 @@ using normalized F0 + 0.3
 
 ### Sample 3
 Text: "아빠가 결혼기념일을 기억하지 않아?"
+*The text in ground truth is slightly different.
 
 Reference
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
@@ -47,6 +48,7 @@ using normalized F0 + 0.3
 
 ### Sample 4
 Text: "곰 한마리가 사무실 건물 위로 날고 있어요."
+*The text in ground truth is slightly different.
 
 Reference
 <audio src="https://raw.githubusercontent.com/yangyangii/yangyangii.github.io/master/assets/_posts/audios/f0dctts/gt-00.wav" controls> Unable to load song. </audio>
