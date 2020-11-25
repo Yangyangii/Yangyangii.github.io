@@ -93,7 +93,7 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 
 * The president of HAILO, AI association (2017. 9. ~ 2018. 2.)
 
-* [Deepest](https://github.com/Deepest-Project), AI Association (2019. 7. ~ Present)
+* [Deepest](https://github.com/Deepest-Project), SNU Deeplearning Society (2019. 7. ~ Present)
 
 <br />
 
