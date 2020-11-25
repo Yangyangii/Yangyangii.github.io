@@ -18,7 +18,7 @@ titles:
 key: page-about
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="Profile Picture" class="profile" width="250" height="250">
+<img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="Profile Picture" class="profile" width="250">
 
 
 Research on Deep Generative Model & Neural Speech Synthesis
@@ -69,7 +69,7 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 
 ## Work Experiences
 
-* <b>Research Intern, Skelter Labs.</b> Implementation of Korean multi-speaker speech synthesis system with TensorFlow (2018. 6. ~ 2018. 8.)
+* <b>Research Intern, Skelter Labs.</b> (2018. 6. ~ 2018. 8.)
 
 * <b>AI Researcher, NCSOFT Speech AI</b> (2019. 7. ~ Present)
 
@@ -94,6 +94,19 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 * The president of HAILO, AI association (2017. 9. ~ 2018. 2.)
 
 * [Deepest](https://github.com/Deepest-Project), SNU Deeplearning Society (2019. 7. ~ Present)
+
+<br />
+
+
+## Related Article
+
+* 더 깨끗하고 완벽한 AI 음성을 위해, 뉴럴 보코더(Neural Vocoder) [[Link]](https://blog.ncsoft.com/vocgan-ai-20200922/), 2020. 09. 22
+
+* 플레이어와 더 가까워진 AI 음성합성 기술 [[Link]](https://blog.ncsoft.com/vocgan-ai-20200922-02/), 2020. 09. 22
+
+* 성우인지, 인공지능인지? 모르는 음성... 엔씨소프트, 혁신적인 'AI 음성합성' 기술 발표 [[Link]](http://www.aitimes.kr/news/articleView.html?idxno=17845), 2020. 09. 24
+
+
 
 <br />
 
