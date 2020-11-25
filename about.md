@@ -18,7 +18,7 @@ titles:
 key: page-about
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="Profile Picture" class="profile" width="250" height="250">
 
 
 Research on Deep Generative Model & Neural Speech Synthesis
