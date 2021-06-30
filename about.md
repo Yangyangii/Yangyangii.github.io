@@ -31,21 +31,18 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 
 ## Dream
 
-* <b>Leading the area of Game AI contents;</b> Planning, researching, and managing future AI contents (e.g. control capability of monsters, affinity with NPC, creating various jobs not manually programming, and intelligent NPC subordinate)
+* <b>Leading the area of game AI contents;</b>
 
 <br />
 
-## Hometown
-
-* Gokseong. Yeah, THE Gokseong you know.
 
 <br />
 
 ## Education
 
-* B.S. in CS. Handong Global University (2011. 2. ~ 2018. 2.)
+* B.S. in Computer Science. Handong Global University (2011. 2. ~ 2018. 2.)
 
-* M.S. in AI. Handong Global University (2018. 2. ~ 2019. 6.)
+* M.S. in Computer Science. Handong Global University (2018. 2. ~ 2019. 6.)
 
 <br />
 
@@ -57,6 +54,12 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 * <u>양진혁</u>, 김인중, "노이즈 어텐션을 통한 딥러닝 기반 음성 합성," KCC, 2019.
 
 * <u>J. Yang</u>, J. Lee, Y. Kim, H. Cho, I. Kim, "VocGAN: A High-Fidelity Real-time Vocoder with a Hierarchically-nested Adversarial Network," Interspeech, 2020.
+
+  * [Demo page](https://nc-ai.github.io/speech/publications/vocgan/index.html)
+
+* <u>J. Yang</u>, J. Bae, T. Bak, Y. Kim, H. Cho, "GANSpeech: Adversarial Training for High-Fidelity Multi-Speaker Speech Synthesis," Accepted to Interspeech, 2021.
+
+  * [Demo page](https://nc-ai.github.io/speech/publications/ganspeech/index.html)
 
 ### Journal
 * <u>J. Yang</u>, H. Kim, H. Kwak and I. Kim, "HanFont: large-scale adaptive Hangul font recognizer using CNN and font clustering," IJDAR, 2019. (SCIE)
@@ -93,12 +96,12 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 
 * The president of HAILO, AI association (2017. 9. ~ 2018. 2.)
 
-* [Deepest](https://github.com/Deepest-Project), SNU Deeplearning Society (2019. 7. ~ Present)
+* [Deepest](https://deepest.ai/), Deeplearning Club (2019. 7. ~ Present)
 
 <br />
 
 
-## Related Article
+## Related Articles
 
 * 더 깨끗하고 완벽한 AI 음성을 위해, 뉴럴 보코더(Neural Vocoder) [[Link]](https://blog.ncsoft.com/vocgan-ai-20200922/), 2020. 09. 22
 
@@ -112,15 +115,9 @@ The following summary is my PERSONAL introduction. (NOT official CV)
 
 ## Hobbies
 
-* Whatcha :: 800+ movies, 200+ dramas
+* Whatcha :: 900+ movies, 200+ dramas
 
-* Novels (especially fantasy) :: 2000+ books
-
-* Variants of novel "Three Kingdoms" :: 15+ read counts
-
-* Sports :: Tennis, Pingpong
-
-* Games :: Koei's Romance of the Three Kingdoms III ~ XI (series 10 is my favorite)
+* Fantasy novels :: 2000+ books
 
 * Playing with children (I love kids)
 
